@@ -1238,6 +1238,12 @@ html.dark .brand .lockup-light { display: none; }
   z-index: 70;
   display: none;
   padding-inline: 1rem;
+  /* This box spans the full viewport width so the card can be centered,
+     but only the card itself should be clickable -- otherwise its empty
+     flex space sits on top of (and blocks clicks to) whatever else is
+     fixed-positioned in that same screen region, like the scroll-to-top
+     button. */
+  pointer-events: none;
 }
 
 .cookie-banner.is-visible {
@@ -1253,6 +1259,7 @@ html.dark .brand .lockup-light { display: none; }
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
+  pointer-events: auto;
 }
 
 .cookie-banner-text {
