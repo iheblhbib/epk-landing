@@ -1,3 +1,4 @@
+<?php require __DIR__ . '/assets/inc/asset-version.php'; ?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -9,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="<?= koraxx_asset_url('assets/css/styles.css') ?>" />
   <script>
     (function () {
       try {
@@ -86,7 +87,7 @@
           <p>Ces prestataires n'ont accès qu'aux données strictement nécessaires à l'exécution de leur mission et sont eux-mêmes tenus à des obligations de confidentialité.</p>
 
           <h2>5. Cookies et technologies similaires</h2>
-          <p>Le détail des cookies et technologies de stockage utilisés par koraxx.fr et par l'application figure dans notre <a href="cookies.html">politique relative aux cookies</a>.</p>
+          <p>Le détail des cookies et technologies de stockage utilisés par koraxx.fr et par l'application figure dans notre <a href="/cookies">politique relative aux cookies</a>.</p>
 
           <h2>6. Durée de conservation</h2>
           <p>Nous conservons vos données tant que votre compte est actif. Si vous supprimez votre compte, vos données personnelles et le contenu de votre espace de travail sont supprimés dans un délai raisonnable, sauf obligation légale de conservation plus longue (notamment les données de facturation).</p>
@@ -121,8 +122,8 @@
           <div class="footer-col">
             <h4 data-i18n="footer.product">Produit</h4>
             <ul>
-              <li><a href="index.html#features" data-i18n="footer.linkFeatures">Fonctionnalités</a></li>
-              <li><a href="index.html#pricing" data-i18n="footer.linkPricing">Tarifs</a></li>
+              <li><a href="/#features" data-i18n="footer.linkFeatures">Fonctionnalités</a></li>
+              <li><a href="/#pricing" data-i18n="footer.linkPricing">Tarifs</a></li>
               <li><a href="https://app.koraxx.fr/login" data-i18n="footer.linkLogin">Se connecter</a></li>
               <li><a href="https://app.koraxx.fr/register" data-i18n="footer.linkSignup">Créer un compte</a></li>
             </ul>
@@ -136,9 +137,9 @@
           <div class="footer-col">
             <h4 data-i18n="footer.legal">Légal</h4>
             <ul>
-              <li><a href="privacy.html" data-i18n="footer.linkPrivacy">Confidentialité</a></li>
-              <li><a href="terms.html" data-i18n="footer.linkTerms">Conditions d'utilisation</a></li>
-              <li><a href="cookies.html" data-i18n="footer.linkCookies">Cookies</a></li>
+              <li><a href="/privacy" data-i18n="footer.linkPrivacy">Confidentialité</a></li>
+              <li><a href="/terms" data-i18n="footer.linkTerms">Conditions d'utilisation</a></li>
+              <li><a href="/cookies" data-i18n="footer.linkCookies">Cookies</a></li>
             </ul>
           </div>
         </div>
@@ -177,7 +178,7 @@
     </div>
   </div>
 
-  <script src="assets/js/i18n-data.js"></script>
-  <script src="assets/js/app.js" defer></script>
+  <script src="<?= koraxx_asset_url('assets/js/i18n-data.js') ?>"></script>
+  <script src="<?= koraxx_asset_url('assets/js/app.js') ?>" defer></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<?php require __DIR__ . '/assets/inc/asset-version.php'; ?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -9,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="<?= koraxx_asset_url('assets/css/styles.css') ?>" />
   <script>
     (function () {
       try {
@@ -46,7 +47,6 @@
       <div class="orb-field"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
       <div class="not-found-card glass-strong">
         <div class="not-found-code">404</div>
-        <span class="eyebrow" data-i18n="notfound.eyebrow">Erreur 404</span>
         <h1 data-i18n="notfound.title">Cette page a pris une pause artistique.</h1>
         <p data-i18n="notfound.body">Le lien que vous avez suivi n'existe pas ou plus. Retournez à l'accueil ou explorez l'application.</p>
         <div class="not-found-actions">
@@ -57,7 +57,7 @@
     </section>
   </main>
 
-  <script src="assets/js/i18n-data.js"></script>
-  <script src="assets/js/app.js" defer></script>
+  <script src="<?= koraxx_asset_url('assets/js/i18n-data.js') ?>"></script>
+  <script src="<?= koraxx_asset_url('assets/js/app.js') ?>" defer></script>
 </body>
 </html>

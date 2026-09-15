@@ -1,15 +1,27 @@
-# Apache config for the koraxx.fr apex domain -- a plain static site (no
-# build step, no client-side routing), separate from app.koraxx.fr.
+# Apache config for the koraxx.fr apex domain -- a plain PHP site (no
+# framework, no build step, no client-side routing), separate from
+# app.koraxx.fr. PHP is used only to append a filemtime()-based ?v= to
+# CSS/JS asset URLs (see assets/inc/asset-version.php) so every deploy is
+# a genuine cache miss, and for clean URLs (see the rewrite rule below).
+
+DirectoryIndex index.php index.html
 
 Options -Indexes
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
     RewriteCond %{HTTPS} off
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Serve /privacy as privacy.php, /terms as terms.php, etc. -- any
+    # extensionless request that isn't an existing file or directory.
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^.]+)$ $1.php [NC,L]
 </IfModule>
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.php
 
 <IfModule mod_expires.c>
     ExpiresActive On
@@ -22,7 +34,7 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 <IfModule mod_headers.c>
-    <FilesMatch "\.(html|css|js|json)$">
+    <FilesMatch "\.(php|html|css|js|json)$">
         Header set Cache-Control "no-cache, must-revalidate"
     </FilesMatch>
 </IfModule>
