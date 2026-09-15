@@ -1,6 +1,8 @@
 # Apache config for the koraxx.fr apex domain -- a plain static site (no
 # build step, no client-side routing), separate from app.koraxx.fr.
 
+Options -Indexes
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} off
