@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KORAXX — Page introuvable</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/brand/mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('koraxx-landing-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <div class="container">
+      <a href="/" class="brand" aria-label="KORAXX">
+        <img class="lockup-light" src="assets/brand/lockup-light.png" alt="KORAXX" />
+        <img class="lockup-dark" src="assets/brand/lockup-dark.png" alt="KORAXX" />
+      </a>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" data-i18n-attr="aria-label:nav.toggleTheme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        </button>
+        <div class="lang-menu">
+          <button type="button" class="icon-btn" data-lang-toggle data-i18n-attr="aria-label:nav.toggleLanguage">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"></path></svg>
+          </button>
+          <div class="lang-menu-panel glass" data-lang-menu-panel role="menu"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="not-found">
+      <div class="orb-field"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+      <div class="not-found-card glass-strong">
+        <div class="not-found-code">404</div>
+        <span class="eyebrow" data-i18n="notfound.eyebrow">Erreur 404</span>
+        <h1 data-i18n="notfound.title">Cette page a pris une pause artistique.</h1>
+        <p data-i18n="notfound.body">Le lien que vous avez suivi n'existe pas ou plus. Retournez à l'accueil ou explorez l'application.</p>
+        <div class="not-found-actions">
+          <a href="/" class="btn btn-primary" data-i18n="notfound.ctaHome">Retour à l'accueil</a>
+          <a href="https://app.koraxx.fr" class="btn btn-ghost" data-i18n="notfound.ctaApp">Accéder à l'application</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/i18n-data.js"></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

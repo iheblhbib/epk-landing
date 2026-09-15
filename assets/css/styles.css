@@ -1,0 +1,1371 @@
+/* ==========================================================================
+   KORAXX landing page — standalone static site (koraxx.fr apex domain).
+   Design tokens mirror frontend/src/styles/globals.css exactly so this page
+   reads as the same product, without importing the app's build tooling.
+   ========================================================================== */
+
+:root {
+  --background: #faf9f6;
+  --foreground: #17151f;
+  --card: #ffffff;
+  --card-foreground: #17151f;
+  --primary: #cc1417;
+  --primary-foreground: #ffffff;
+  --secondary: #f1efea;
+  --secondary-foreground: #17151f;
+  --muted: #f1efea;
+  --muted-foreground: #6b6875;
+  --accent: #fbefef;
+  --accent-foreground: #9e0f12;
+  --border: #e7e4dd;
+  --border-strong: #d8d4ca;
+  --ring: #cc1417;
+  --radius: 0.625rem;
+
+  --glass-bg: color-mix(in oklab, white 65%, transparent);
+  --glass-bg-strong: color-mix(in oklab, white 80%, transparent);
+  --glass-border: color-mix(in oklab, white 40%, var(--border));
+  --glass-shadow: 0 8px 32px color-mix(in oklab, var(--foreground) 12%, transparent);
+  --orb-primary: color-mix(in oklab, var(--primary) 55%, transparent);
+  --orb-secondary: color-mix(in oklab, #6d5ef9 45%, transparent);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', var(--font-sans);
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --tape: #f2eee2;
+  --tape-ink: #2a2620;
+
+  color-scheme: light;
+}
+
+html.dark {
+  --background: #0e0d13;
+  --foreground: #f4f3f8;
+  --card: #17151f;
+  --card-foreground: #f4f3f8;
+  --primary: #ee3a3d;
+  --primary-foreground: #0e0d13;
+  --secondary: #1f1c29;
+  --secondary-foreground: #f4f3f8;
+  --muted: #1f1c29;
+  --muted-foreground: #9b96a8;
+  --accent: #4a1c1d;
+  --accent-foreground: #f1b1b2;
+  --border: color-mix(in oklab, white 10%, transparent);
+  --border-strong: color-mix(in oklab, white 18%, transparent);
+  --ring: #ee3a3d;
+
+  --glass-bg: color-mix(in oklab, var(--card) 55%, transparent);
+  --glass-bg-strong: color-mix(in oklab, var(--card) 72%, transparent);
+  --glass-border: color-mix(in oklab, white 14%, transparent);
+  --glass-shadow: 0 8px 40px color-mix(in oklab, black 55%, transparent);
+  --orb-primary: color-mix(in oklab, var(--primary) 65%, transparent);
+  --orb-secondary: color-mix(in oklab, #8b7bff 55%, transparent);
+
+  color-scheme: dark;
+}
+
+/* -------------------------------------------------------------------------
+   Reset
+   ------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -------------------------------------------------------------------------
+   Layout helpers
+   ------------------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+section {
+  position: relative;
+}
+
+.section-pad {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.section-head {
+  max-width: 40rem;
+  margin-inline: auto;
+  text-align: center;
+  margin-block-end: clamp(2rem, 5vw, 3.5rem);
+}
+
+.section-head h2 {
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  margin-block-end: 0.75rem;
+}
+
+.section-head p {
+  color: var(--muted-foreground);
+  font-size: 1.05rem;
+}
+
+/* -------------------------------------------------------------------------
+   Glassmorphism primitives
+   ------------------------------------------------------------------------- */
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-strong {
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(28px) saturate(150%);
+  -webkit-backdrop-filter: blur(28px) saturate(150%);
+  box-shadow: var(--glass-shadow);
+}
+
+.orb-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* The hero's orb-field is page-level ambient glow, not decoration
+   contained inside a card -- it must be allowed to fade into the
+   section below instead of being hard-clipped at the hero's own box
+   (that clip, not .hero's own overflow, was the actual cause of the
+   visible seam under the hero). .final-cta's orb-field stays clipped
+   since that one is meant to stay inside its rounded glass panel. */
+.hero .orb-field {
+  overflow: visible;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.55;
+}
+
+.orb-1 {
+  inset-inline-start: -6rem;
+  top: -4rem;
+  width: 24rem;
+  height: 24rem;
+  background: var(--orb-primary);
+}
+
+.orb-2 {
+  inset-inline-end: -8rem;
+  top: 8rem;
+  width: 28rem;
+  height: 28rem;
+  background: var(--orb-secondary);
+}
+
+.orb-3 {
+  inset-inline-start: 30%;
+  bottom: -10rem;
+  width: 22rem;
+  height: 22rem;
+  background: var(--orb-primary);
+  opacity: 0.35;
+}
+
+/* -------------------------------------------------------------------------
+   Buttons
+   ------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: calc(var(--radius) * 1.4);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: 0 8px 24px color-mix(in oklab, var(--primary) 45%, transparent);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 30px color-mix(in oklab, var(--primary) 55%, transparent);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: color-mix(in oklab, var(--foreground) 4%, transparent);
+  border-color: var(--glass-border);
+  color: var(--foreground);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.btn-ghost:hover {
+  background: color-mix(in oklab, var(--foreground) 8%, transparent);
+}
+
+.btn-lg {
+  padding: 0.85rem 1.75rem;
+  font-size: 1.02rem;
+}
+
+/* -------------------------------------------------------------------------
+   Header
+   ------------------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--glass-bg);
+  border-block-end: 1px solid var(--glass-border);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  block-size: 4rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 1.4rem;
+  width: auto;
+}
+
+.brand .lockup-dark { display: none; }
+html.dark .brand .lockup-dark { display: block; }
+html.dark .brand .lockup-light { display: none; }
+
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-links a {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--foreground);
+}
+
+@media (min-width: 900px) {
+  .nav-links {
+    display: flex;
+  }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.icon-btn:hover {
+  background: color-mix(in oklab, var(--foreground) 8%, transparent);
+}
+
+.icon-btn svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.header-actions .btn {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .header-actions .btn {
+    display: inline-flex;
+  }
+}
+
+.menu-toggle {
+  display: inline-flex;
+}
+
+@media (min-width: 900px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  height: 3px;
+  z-index: 50;
+  background: linear-gradient(90deg, var(--primary), var(--orb-secondary));
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  pointer-events: none;
+}
+[dir="rtl"] .scroll-progress {
+  transform-origin: 100% 0;
+}
+
+/* -------------------------------------------------------------------------
+   Mobile menu
+   ------------------------------------------------------------------------- */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: none;
+}
+
+.mobile-menu.is-open {
+  display: block;
+}
+
+.mobile-menu-backdrop {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in oklab, black 55%, transparent);
+}
+
+.mobile-menu-panel {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+  width: min(20rem, 86vw);
+  background: var(--glass-bg-strong);
+  border-inline-start: 1px solid var(--glass-border);
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: slide-in 0.25s ease;
+}
+
+[dir="rtl"] .mobile-menu-panel {
+  inset-inline-start: 0;
+  inset-inline-end: auto;
+  border-inline-start: none;
+  border-inline-end: 1px solid var(--glass-border);
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+[dir="rtl"] .mobile-menu-panel {
+  animation-name: slide-in-rtl;
+}
+@keyframes slide-in-rtl {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.mobile-menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mobile-menu nav a {
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+.mobile-menu nav a:hover {
+  background: color-mix(in oklab, var(--foreground) 6%, transparent);
+}
+
+.mobile-menu-footer {
+  margin-block-start: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* -------------------------------------------------------------------------
+   Hero
+   ------------------------------------------------------------------------- */
+
+.hero {
+  padding-block-start: clamp(3.5rem, 9vw, 6rem);
+  padding-block-end: clamp(3rem, 8vw, 5rem);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .hero .container {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+}
+
+.hero-copy {
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .hero-copy {
+    text-align: start;
+  }
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-foreground);
+  background: var(--accent);
+  margin-block-end: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 5.2vw, 3.4rem);
+  letter-spacing: -0.01em;
+  margin-block-end: 1.1rem;
+}
+
+.hero h1 .accent {
+  color: var(--primary);
+}
+
+.hero p.lead {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: var(--muted-foreground);
+  max-width: 34rem;
+  margin-inline: auto;
+  margin-block-end: 1.75rem;
+}
+
+@media (min-width: 960px) {
+  .hero p.lead {
+    margin-inline: 0;
+  }
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-block-end: 1.25rem;
+}
+
+@media (min-width: 960px) {
+  .hero .hero-ctas {
+    justify-content: flex-start;
+  }
+}
+
+.hero-fineprint {
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+}
+
+/* Hero mockup */
+.hero-visual {
+  position: relative;
+}
+
+.mock-frame {
+  position: relative;
+  border-radius: 1.4rem;
+  padding: 1.1rem;
+  transform: rotate(-2deg);
+}
+
+.mock-topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-block-end: 0.9rem;
+}
+
+.mock-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.mock-card {
+  background: color-mix(in oklab, var(--card) 82%, transparent);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.9rem;
+  padding: 1.1rem;
+}
+
+.mock-avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--orb-secondary));
+  margin-block-end: 0.75rem;
+}
+
+.mock-line {
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--border-strong);
+  margin-block-end: 0.5rem;
+}
+
+.mock-line.w-60 { width: 60%; }
+.mock-line.w-40 { width: 40%; }
+.mock-line.w-80 { width: 80%; }
+
+.mock-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  margin-block-end: 0.9rem;
+}
+
+.mock-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-block-start: 0.9rem;
+}
+
+.mock-stat {
+  background: color-mix(in oklab, var(--card) 70%, transparent);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.7rem;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.mock-stat strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+}
+
+.mock-stat span {
+  font-size: 0.68rem;
+  color: var(--muted-foreground);
+}
+
+/* Backstage laminate -- the one deliberately bold, subject-specific motif
+   in the hero. Styled like a physical all-access pass, not a generic UI
+   pill, so it stays visually the same paper tone in both themes. */
+.laminate {
+  position: absolute;
+  top: -1.75rem;
+  inset-inline-end: -1.5rem;
+  width: 8.75rem;
+  padding: 0.7rem 0.7rem 0.65rem;
+  background: var(--tape);
+  color: var(--tape-ink);
+  border-radius: 0.55rem;
+  box-shadow: 0 16px 32px color-mix(in oklab, black 40%, transparent), 0 0 0 1px color-mix(in oklab, black 10%, transparent);
+  transform: rotate(7deg);
+  z-index: 2;
+}
+
+.laminate::before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.15rem;
+  height: 0.65rem;
+  border-radius: 0.15rem;
+  background: color-mix(in oklab, var(--tape-ink) 65%, transparent);
+}
+
+.laminate-hole {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--tape-ink) 22%, transparent);
+  margin-inline: auto;
+  margin-block-end: 0.45rem;
+}
+
+.laminate-stripe {
+  height: 0.28rem;
+  border-radius: 999px;
+  background: var(--primary);
+  margin-block-end: 0.5rem;
+}
+
+.laminate-label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1.25;
+}
+
+.laminate-sub {
+  font-size: 0.62rem;
+  color: color-mix(in oklab, var(--tape-ink) 62%, transparent);
+  margin-block-start: 0.15rem;
+}
+
+.laminate-code {
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.03em;
+  margin-block-start: 0.5rem;
+  padding-block-start: 0.4rem;
+  border-block-start: 1px dashed color-mix(in oklab, var(--tape-ink) 25%, transparent);
+  color: color-mix(in oklab, var(--tape-ink) 55%, transparent);
+}
+
+@media (max-width: 640px) {
+  .laminate { display: none; }
+}
+
+/* -------------------------------------------------------------------------
+   Steps
+   ------------------------------------------------------------------------- */
+
+.steps {
+  display: grid;
+  gap: 1.25rem;
+  position: relative;
+}
+
+@media (min-width: 800px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .steps::before {
+    content: "";
+    position: absolute;
+    top: 2.1rem;
+    inset-inline: 12%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+  }
+}
+
+.step-card {
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block-end: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: 0 6px 18px color-mix(in oklab, var(--primary) 45%, transparent);
+}
+
+.step-card h3 {
+  font-size: 1.05rem;
+  margin-block-end: 0.5rem;
+}
+
+.step-card p {
+  color: var(--muted-foreground);
+  font-size: 0.92rem;
+}
+
+/* -------------------------------------------------------------------------
+   Features, as a tracklist -- six things KORAXX does, listed the way an
+   album's back cover lists its tracks, not as a grid of icon cards.
+   ------------------------------------------------------------------------- */
+
+.tracklist {
+  border-block-start: 1px solid var(--border);
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  column-gap: 1rem;
+  row-gap: 0.3rem;
+  padding-block: 1.15rem;
+  border-block-end: 1px solid var(--border);
+}
+
+@media (min-width: 760px) {
+  .track-row {
+    grid-template-columns: 2.5rem 14rem 1fr;
+    align-items: baseline;
+    column-gap: 1.5rem;
+  }
+}
+
+.track-number {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+  font-variant-numeric: tabular-nums;
+}
+
+.track-title {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.track-body {
+  grid-column: 2 / -1;
+  color: var(--muted-foreground);
+  font-size: 0.92rem;
+}
+
+@media (min-width: 760px) {
+  .track-body {
+    grid-column: 3;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Showcase
+   ------------------------------------------------------------------------- */
+
+.showcase-panel {
+  padding: clamp(1rem, 3vw, 1.75rem);
+  position: relative;
+}
+
+.showcase-mock {
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: color-mix(in oklab, var(--card) 75%, transparent);
+}
+
+.showcase-mock .mock-topbar {
+  padding: 0.75rem 1rem;
+  margin: 0;
+  border-block-end: 1px solid var(--glass-border);
+}
+
+.showcase-body {
+  padding: 1.25rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.showcase-body .mock-stat {
+  grid-column: span 1;
+}
+
+.showcase-chart {
+  grid-column: 1 / -1;
+  height: 8rem;
+  border-radius: 0.7rem;
+  background: color-mix(in oklab, var(--card) 60%, transparent);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.showcase-chart span {
+  flex: 1;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: linear-gradient(180deg, var(--primary), color-mix(in oklab, var(--primary) 40%, transparent));
+}
+
+@media (max-width: 640px) {
+  .showcase-body { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* -------------------------------------------------------------------------
+   Pricing
+   ------------------------------------------------------------------------- */
+
+.pricing-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.price-card {
+  position: relative;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price-card.featured {
+  border-color: color-mix(in oklab, var(--primary) 55%, var(--glass-border));
+  box-shadow: 0 12px 40px color-mix(in oklab, var(--primary) 25%, transparent);
+  transform: translateY(-0.35rem);
+}
+
+.price-badge {
+  position: absolute;
+  top: -0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.price-card h3 {
+  font-size: 1.15rem;
+}
+
+.price-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.price-amount strong {
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+}
+
+.price-amount span {
+  color: var(--muted-foreground);
+  font-size: 0.88rem;
+}
+
+.price-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+
+.price-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  color: var(--foreground);
+}
+
+.price-features svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-block-start: 0.15rem;
+}
+
+.pricing-note {
+  text-align: center;
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  margin-block-start: 2rem;
+}
+
+/* -------------------------------------------------------------------------
+   Final CTA
+   ------------------------------------------------------------------------- */
+
+.final-cta {
+  text-align: center;
+  padding: clamp(2.5rem, 6vw, 4rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  margin-block-end: 0.75rem;
+  position: relative;
+}
+
+.final-cta p {
+  color: var(--muted-foreground);
+  max-width: 32rem;
+  margin-inline: auto;
+  margin-block-end: 1.75rem;
+  position: relative;
+}
+
+.final-cta .hero-ctas {
+  position: relative;
+}
+
+/* -------------------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------------------- */
+
+.site-footer {
+  border-block-start: 1px solid var(--border);
+  padding-block: 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-block-end: 2rem;
+}
+
+.footer-brand p {
+  color: var(--muted-foreground);
+  font-size: 0.88rem;
+  max-width: 20rem;
+  margin-block-start: 0.75rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.footer-col h4 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-foreground);
+  margin-block-end: 0.75rem;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-col a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+.footer-col a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: 1.5rem;
+  border-block-start: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--muted-foreground);
+}
+
+.footer-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------
+   Language switcher
+   ------------------------------------------------------------------------- */
+
+.lang-menu {
+  position: relative;
+}
+
+.lang-menu-panel {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  inset-inline-end: 0;
+  min-width: 11rem;
+  padding: 0.4rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.15rem;
+  z-index: 50;
+}
+
+.lang-menu-panel.is-open {
+  display: flex;
+}
+
+.lang-menu-panel button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.55rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.88rem;
+  text-align: start;
+}
+
+.lang-menu-panel button:hover {
+  background: color-mix(in oklab, var(--foreground) 7%, transparent);
+}
+
+.lang-menu-panel button[aria-current="true"] {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.footer-controls .lang-menu-panel {
+  top: auto;
+  bottom: calc(100% + 0.5rem);
+}
+
+/* -------------------------------------------------------------------------
+   Scroll-to-top
+   ------------------------------------------------------------------------- */
+
+.scroll-top-btn {
+  position: fixed;
+  inset-block-end: 1.5rem;
+  inset-inline-end: 1.5rem;
+  z-index: 45;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--glass-shadow);
+  opacity: 0;
+  transform: translateY(0.5rem);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.scroll-top-btn.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-top-btn svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* -------------------------------------------------------------------------
+   Cookie banner
+   ------------------------------------------------------------------------- */
+
+.cookie-banner {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 1rem;
+  z-index: 70;
+  display: none;
+  padding-inline: 1rem;
+}
+
+.cookie-banner.is-visible {
+  display: flex;
+  justify-content: center;
+}
+
+.cookie-banner-card {
+  width: 100%;
+  max-width: 46rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cookie-banner-text {
+  flex: 1;
+  min-width: 16rem;
+  font-size: 0.88rem;
+  color: var(--muted-foreground);
+}
+
+.cookie-banner-text strong {
+  color: var(--foreground);
+  display: block;
+  margin-block-end: 0.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+}
+
+.cookie-banner-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.cookie-banner-actions .btn {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.85rem;
+}
+
+/* -------------------------------------------------------------------------
+   404 page
+   ------------------------------------------------------------------------- */
+
+.not-found {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.not-found-card {
+  max-width: 32rem;
+  padding: clamp(2rem, 5vw, 3rem);
+  position: relative;
+  z-index: 1;
+}
+
+.not-found-code {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 12vw, 5.5rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--orb-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+  margin-block-end: 0.5rem;
+}
+
+.not-found h1 {
+  font-size: 1.4rem;
+  margin-block-end: 0.75rem;
+}
+
+.not-found p {
+  color: var(--muted-foreground);
+  margin-block-end: 1.75rem;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+/* -------------------------------------------------------------------------
+   Hero entrance -- the one deliberate motion moment on the page. Everything
+   below the fold is static; nothing fades in on scroll, nothing lifts on
+   hover except the controls that are actually interactive.
+   ------------------------------------------------------------------------- */
+
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge,
+.hero h1,
+.hero p.lead,
+.hero-ctas,
+.hero-fineprint,
+.hero-visual {
+  animation: hero-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-badge { animation-delay: 0ms; }
+.hero h1 { animation-delay: 60ms; }
+.hero p.lead { animation-delay: 120ms; }
+.hero-ctas { animation-delay: 180ms; }
+.hero-fineprint { animation-delay: 220ms; }
+.hero-visual { animation-delay: 140ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge,
+  .hero h1,
+  .hero p.lead,
+  .hero-ctas,
+  .hero-fineprint,
+  .hero-visual {
+    animation: none;
+  }
+}
