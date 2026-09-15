@@ -238,7 +238,7 @@ window.KORAXX_I18N = {
   "fr": {
     "meta": {
       "title": "KORAXX — Créez et partagez l'EPK de votre artiste",
-      "description": "KORAXX est la plateforme pour créer, personnaliser et partager le dossier de presse électronique (EPK) de votre artiste. Essai gratuit de 14 jours."
+      "description": "KORAXX est la plateforme pour créer, personnaliser et partager le dossier de press électronique (EPK) de votre artiste. Essai gratuit de 14 jours."
     },
     "skipLink": "Aller au contenu principal",
     "nav": {
@@ -254,7 +254,7 @@ window.KORAXX_I18N = {
     },
     "hero": {
       "badge": "Nouveauté : créez votre EPK en quelques minutes",
-      "titleStart": "Votre dossier de presse,",
+      "titleStart": "Votre dossier de press,",
       "titleAccent": "prêt à être vu.",
       "lead": "Créez, personnalisez et partagez l'EPK de votre artiste en quelques minutes — sans designer, sans code.",
       "ctaPrimary": "Créer mon compte",
@@ -274,7 +274,7 @@ window.KORAXX_I18N = {
       "step1Title": "Créez votre artiste",
       "step1Body": "Renseignez le profil de l'artiste : bio, genre, liens, contacts.",
       "step2Title": "Construisez votre EPK",
-      "step2Body": "Ajoutez des sections par glisser-déposer : musique, photos, presse, crédits.",
+      "step2Body": "Ajoutez des sections par glisser-déposer : musique, photos, press, crédits.",
       "step3Title": "Partagez-le",
       "step3Body": "Lien public, lien privé protégé par mot de passe, ou domaine personnalisé."
     },
@@ -283,7 +283,7 @@ window.KORAXX_I18N = {
       "title": "Tout ce qu'il faut pour votre promotion",
       "lead": "Conçu spécifiquement pour les artistes, labels et managers.",
       "f1Title": "Éditeur de sections",
-      "f1Body": "Glissez-déposez des sections (musique, photos, vidéos, presse) et personnalisez le thème.",
+      "f1Body": "Glissez-déposez des sections (musique, photos, vidéos, press) et personnalisez le thème.",
       "f2Title": "Bibliothèque média",
       "f2Body": "Centralisez photos, visuels et documents pour tous vos EPK.",
       "f3Title": "Statistiques en temps réel",
@@ -344,7 +344,7 @@ window.KORAXX_I18N = {
       "secondary": "Se connecter"
     },
     "footer": {
-      "tagline": "La plateforme de promotion musicale pour créer, personnaliser et partager votre dossier de presse électronique.",
+      "tagline": "La plateforme de promotion musicale pour créer, personnaliser et partager votre dossier de press électronique.",
       "product": "Produit",
       "linkFeatures": "Fonctionnalités",
       "linkPricing": "Tarifs",
@@ -389,7 +389,7 @@ window.KORAXX_I18N = {
       "s1Body": "<span class=\"legal-placeholder\">[Nom de l'entité légale]</span>, <span class=\"legal-placeholder\">[forme juridique, ex. SASU]</span> immatriculée sous le numéro <span class=\"legal-placeholder\">[SIRET / n° d'immatriculation]</span>, dont le siège est situé <span class=\"legal-placeholder\">[adresse enregistrée]</span>, est responsable du traitement de vos données au sens du Règlement général sur la protection des données (RGPD).",
       "s2Title": "2. Les données que nous collectons",
       "s2Intro": "Lorsque vous créez un compte et utilisez l'application, nous collectons :",
-      "s2List": "<li><strong>Informations de compte</strong> : nom, adresse e-mail, mot de passe (stocké sous forme chiffrée), photo de profil si vous en ajoutez une.</li><li><strong>Contenu de votre espace de travail</strong> : profils d'artistes, dossiers de presse (EPK) et leur contenu (biographies, musique, photos, vidéos, documents), contacts que vous enregistrez.</li><li><strong>Informations d'équipe</strong> : adresses e-mail des membres que vous invitez et leur rôle.</li><li><strong>Informations de facturation</strong> : votre plan d'abonnement et son statut. Les numéros de carte bancaire ne transitent jamais par nos serveurs — ils sont traités directement par notre prestataire de paiement, Stripe.</li>",
+      "s2List": "<li><strong>Informations de compte</strong> : nom, adresse e-mail, mot de passe (stocké sous forme chiffrée), photo de profil si vous en ajoutez une.</li><li><strong>Contenu de votre espace de travail</strong> : profils d'artistes, dossiers de press (EPK) et leur contenu (biographies, musique, photos, vidéos, documents), contacts que vous enregistrez.</li><li><strong>Informations d'équipe</strong> : adresses e-mail des membres que vous invitez et leur rôle.</li><li><strong>Informations de facturation</strong> : votre plan d'abonnement et son statut. Les numéros de carte bancaire ne transitent jamais par nos serveurs — ils sont traités directement par notre prestataire de paiement, Stripe.</li>",
       "s2Visitor": "Lorsqu'une personne consulte un EPK publié que vous avez créé, nous collectons également des données sur ce visiteur, pour vous fournir des statistiques : un identifiant anonymisé (haché) du visiteur, le pays et le type d'appareil approximatifs, le site référent, ainsi que les vues et téléchargements. Nous ne stockons pas l'adresse IP brute des visiteurs.",
       "s3Title": "3. Pourquoi nous utilisons ces données",
       "s3List": "<li>Fournir, maintenir et sécuriser le service (créer votre compte, afficher vos EPK, gérer les accès de votre équipe).</li><li>Traiter les paiements et gérer votre abonnement.</li><li>Vous envoyer les e-mails nécessaires au fonctionnement du service (confirmation de compte, notifications d'activité, informations de facturation).</li><li>Produire les statistiques de consultation de vos EPK.</li><li>Répondre à vos demandes lorsque vous nous contactez.</li>",
@@ -417,9 +417,9 @@ window.KORAXX_I18N = {
       },
       "title": "Conditions d'utilisation",
       "updated": "Dernière mise à jour : 15 septembre 2026",
-      "intro": "Ces conditions régissent votre utilisation de KORAXX, la plateforme de création, personnalisation et partage de dossiers de presse électroniques (EPK), accessible via <strong>koraxx.fr</strong> et <strong>app.koraxx.fr</strong>. En créant un compte, vous acceptez ces conditions.",
+      "intro": "Ces conditions régissent votre utilisation de KORAXX, la plateforme de création, personnalisation et partage de dossiers de press électroniques (EPK), accessible via <strong>koraxx.fr</strong> et <strong>app.koraxx.fr</strong>. En créant un compte, vous acceptez ces conditions.",
       "s1Title": "1. Le service",
-      "s1Body": "KORAXX vous permet de créer des profils d'artistes, de construire des dossiers de presse électroniques à partir de sections personnalisables (musique, photos, vidéos, presse, crédits), de les publier publiquement ou de les partager via des liens privés protégés par mot de passe, et de suivre leurs statistiques de consultation.",
+      "s1Body": "KORAXX vous permet de créer des profils d'artistes, de construire des dossiers de press électroniques à partir de sections personnalisables (musique, photos, vidéos, press, crédits), de les publier publiquement ou de les partager via des liens privés protégés par mot de passe, et de suivre leurs statistiques de consultation.",
       "s2Title": "2. Votre compte",
       "s2Body": "Vous devez fournir des informations exactes lors de la création de votre compte et êtes responsable de la confidentialité de votre mot de passe. Vous êtes responsable de toute activité effectuée depuis votre compte. Vous devez avoir au moins 18 ans, ou l'autorisation d'un représentant légal, pour créer un compte.",
       "s3Title": "3. Abonnements et facturation",
@@ -934,7 +934,7 @@ window.KORAXX_I18N = {
   "de": {
     "meta": {
       "title": "KORAXX — Erstelle und teile das EPK deines Künstlers",
-      "description": "KORAXX ist die Plattform, um das elektronische Pressekit (EPK) deines Künstlers zu erstellen, anzupassen und zu teilen. 14 Tage kostenlos testen."
+      "description": "KORAXX ist die Plattform, um das elektronische presskit (EPK) deines Künstlers zu erstellen, anzupassen und zu teilen. 14 Tage kostenlos testen."
     },
     "skipLink": "Zum Hauptinhalt springen",
     "nav": {
@@ -950,7 +950,7 @@ window.KORAXX_I18N = {
     },
     "hero": {
       "badge": "Neu: Erstelle dein EPK in wenigen Minuten",
-      "titleStart": "Dein Pressekit,",
+      "titleStart": "Dein presskit,",
       "titleAccent": "bereit, gesehen zu werden.",
       "lead": "Erstelle, personalisiere und teile das EPK deines Künstlers in wenigen Minuten — ohne Designer, ohne Code.",
       "ctaPrimary": "Konto erstellen",
@@ -970,7 +970,7 @@ window.KORAXX_I18N = {
       "step1Title": "Erstelle deinen Künstler",
       "step1Body": "Fülle das Künstlerprofil aus: Bio, Genre, Links, Kontakte.",
       "step2Title": "Baue dein EPK",
-      "step2Body": "Füge Abschnitte per Drag & Drop hinzu: Musik, Fotos, Presse, Credits.",
+      "step2Body": "Füge Abschnitte per Drag & Drop hinzu: Musik, Fotos, press, Credits.",
       "step3Title": "Teile es",
       "step3Body": "Öffentlicher Link, passwortgeschützter privater Link oder eigene Domain."
     },
@@ -979,7 +979,7 @@ window.KORAXX_I18N = {
       "title": "Alles, was du für deine Promotion brauchst",
       "lead": "Speziell für Künstler, Labels und Manager entwickelt.",
       "f1Title": "Abschnitts-Editor",
-      "f1Body": "Ziehe Abschnitte per Drag & Drop (Musik, Fotos, Videos, Presse) und passe das Design an.",
+      "f1Body": "Ziehe Abschnitte per Drag & Drop (Musik, Fotos, Videos, Press) und passe das Design an.",
       "f2Title": "Medienbibliothek",
       "f2Body": "Zentralisiere Fotos, Visuals und Dokumente für alle deine EPKs.",
       "f3Title": "Statistiken in Echtzeit",
@@ -1040,7 +1040,7 @@ window.KORAXX_I18N = {
       "secondary": "Anmelden"
     },
     "footer": {
-      "tagline": "Die Musik-Promotion-Plattform zum Erstellen, Anpassen und Teilen deines elektronischen Pressekits.",
+      "tagline": "Die Musik-Promotion-Plattform zum Erstellen, Anpassen und Teilen deines elektronischen Presskits.",
       "product": "Produkt",
       "linkFeatures": "Funktionen",
       "linkPricing": "Preise",
@@ -1085,7 +1085,7 @@ window.KORAXX_I18N = {
       "s1Body": "<span class=\"legal-placeholder\">[Name der juristischen Person]</span>, <span class=\"legal-placeholder\">[Rechtsform, z. B. SASU]</span>, eingetragen unter der Nummer <span class=\"legal-placeholder\">[SIRET / Registrierungsnummer]</span>, mit Sitz in <span class=\"legal-placeholder\">[eingetragene Adresse]</span>, ist im Sinne der Datenschutz-Grundverordnung (DSGVO) für die Verarbeitung Ihrer Daten verantwortlich.",
       "s2Title": "2. Daten, die wir erheben",
       "s2Intro": "Wenn Sie ein Konto erstellen und die Anwendung nutzen, erheben wir:",
-      "s2List": "<li><strong>Kontoinformationen</strong>: Name, E-Mail-Adresse, Passwort (verschlüsselt gespeichert), Profilbild, falls Sie eines hinzufügen.</li><li><strong>Inhalte Ihres Arbeitsbereichs</strong>: Künstlerprofile, elektronische Pressemappen (EPK) und deren Inhalte (Biografien, Musik, Fotos, Videos, Dokumente), von Ihnen gespeicherte Kontakte.</li><li><strong>Team-Informationen</strong>: E-Mail-Adressen der von Ihnen eingeladenen Mitglieder und deren Rolle.</li><li><strong>Abrechnungsinformationen</strong>: Ihr Abonnementplan und dessen Status. Kartennummern durchlaufen niemals unsere Server — sie werden direkt von unserem Zahlungsdienstleister Stripe verarbeitet.</li>",
+      "s2List": "<li><strong>Kontoinformationen</strong>: Name, E-Mail-Adresse, Passwort (verschlüsselt gespeichert), Profilbild, falls Sie eines hinzufügen.</li><li><strong>Inhalte Ihres Arbeitsbereichs</strong>: Künstlerprofile, elektronische Pressmappen (EPK) und deren Inhalte (Biografien, Musik, Fotos, Videos, Dokumente), von Ihnen gespeicherte Kontakte.</li><li><strong>Team-Informationen</strong>: E-Mail-Adressen der von Ihnen eingeladenen Mitglieder und deren Rolle.</li><li><strong>Abrechnungsinformationen</strong>: Ihr Abonnementplan und dessen Status. Kartennummern durchlaufen niemals unsere Server — sie werden direkt von unserem Zahlungsdienstleister Stripe verarbeitet.</li>",
       "s2Visitor": "Wenn jemand ein von Ihnen veröffentlichtes EPK aufruft, erheben wir außerdem Daten zu diesem Besucher, um Ihnen Statistiken bereitzustellen: eine anonymisierte (gehashte) Besucherkennung, das ungefähre Land und den Gerätetyp, die verweisende Website sowie Aufrufe und Downloads. Wir speichern keine rohen IP-Adressen von Besuchern.",
       "s3Title": "3. Warum wir diese Daten verwenden",
       "s3List": "<li>Bereitstellung, Wartung und Absicherung des Dienstes (Erstellen Ihres Kontos, Anzeigen Ihrer EPKs, Verwaltung der Zugriffsrechte Ihres Teams).</li><li>Verarbeitung von Zahlungen und Verwaltung Ihres Abonnements.</li><li>Versand der für den Betrieb des Dienstes erforderlichen E-Mails (Kontobestätigung, Aktivitätsbenachrichtigungen, Abrechnungsinformationen).</li><li>Erstellung von Nutzungsstatistiken für Ihre EPKs.</li><li>Beantwortung Ihrer Anfragen, wenn Sie uns kontaktieren.</li>",
@@ -1113,9 +1113,9 @@ window.KORAXX_I18N = {
       },
       "title": "Nutzungsbedingungen",
       "updated": "Zuletzt aktualisiert: 15. September 2026",
-      "intro": "Diese Bedingungen regeln Ihre Nutzung von KORAXX, der Plattform zum Erstellen, Anpassen und Teilen elektronischer Pressemappen (EPK), erreichbar über <strong>koraxx.fr</strong> und <strong>app.koraxx.fr</strong>. Mit der Erstellung eines Kontos akzeptieren Sie diese Bedingungen.",
+      "intro": "Diese Bedingungen regeln Ihre Nutzung von KORAXX, der Plattform zum Erstellen, Anpassen und Teilen elektronischer Pressmappen (EPK), erreichbar über <strong>koraxx.fr</strong> und <strong>app.koraxx.fr</strong>. Mit der Erstellung eines Kontos akzeptieren Sie diese Bedingungen.",
       "s1Title": "1. Der Dienst",
-      "s1Body": "Mit KORAXX können Sie Künstlerprofile erstellen, elektronische Pressemappen aus anpassbaren Abschnitten (Musik, Fotos, Videos, Presse, Credits) zusammenstellen, diese öffentlich veröffentlichen oder über passwortgeschützte private Links teilen und deren Aufrufstatistiken verfolgen.",
+      "s1Body": "Mit KORAXX können Sie Künstlerprofile erstellen, elektronische Pressmappen aus anpassbaren Abschnitten (Musik, Fotos, Videos, Press, Credits) zusammenstellen, diese öffentlich veröffentlichen oder über passwortgeschützte private Links teilen und deren Aufrufstatistiken verfolgen.",
       "s2Title": "2. Ihr Konto",
       "s2Body": "Sie müssen bei der Erstellung Ihres Kontos korrekte Angaben machen und sind für die Geheimhaltung Ihres Passworts verantwortlich. Sie sind für jede Aktivität verantwortlich, die von Ihrem Konto aus durchgeführt wird. Sie müssen mindestens 18 Jahre alt sein oder die Zustimmung eines gesetzlichen Vertreters haben, um ein Konto zu erstellen.",
       "s3Title": "3. Abonnements und Abrechnung",
