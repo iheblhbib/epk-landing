@@ -21,7 +21,7 @@
     })();
   </script>
 </head>
-<body>
+<body data-i18n-page="termsPage">
   <header class="site-header" data-site-header>
     <div class="container">
       <a href="/" class="brand" aria-label="KORAXX">
@@ -47,53 +47,53 @@
       <div class="container">
         <a href="/" class="legal-back">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
-          Retour à l'accueil
+          <span data-i18n="legalPage.back">Retour à l'accueil</span>
         </a>
 
-        <h1>Conditions d'utilisation</h1>
-        <p class="legal-updated">Dernière mise à jour : 15 septembre 2026</p>
+        <h1 data-i18n="termsPage.title">Conditions d'utilisation</h1>
+        <p class="legal-updated" data-i18n="termsPage.updated">Dernière mise à jour : 15 septembre 2026</p>
 
         <div class="legal-content">
-          <p>Ces conditions régissent votre utilisation de KORAXX, la plateforme de création, personnalisation et partage de dossiers de presse électroniques (EPK), accessible via <strong>koraxx.fr</strong> et <strong>app.koraxx.fr</strong>. En créant un compte, vous acceptez ces conditions.</p>
+          <p data-i18n-html="termsPage.intro">Ces conditions régissent votre utilisation de KORAXX, la plateforme de création, personnalisation et partage de dossiers de presse électroniques (EPK), accessible via <strong>koraxx.fr</strong> et <strong>app.koraxx.fr</strong>. En créant un compte, vous acceptez ces conditions.</p>
 
-          <h2>1. Le service</h2>
-          <p>KORAXX vous permet de créer des profils d'artistes, de construire des dossiers de presse électroniques à partir de sections personnalisables (musique, photos, vidéos, presse, crédits), de les publier publiquement ou de les partager via des liens privés protégés par mot de passe, et de suivre leurs statistiques de consultation.</p>
+          <h2 data-i18n="termsPage.s1Title">1. Le service</h2>
+          <p data-i18n="termsPage.s1Body">KORAXX vous permet de créer des profils d'artistes, de construire des dossiers de presse électroniques à partir de sections personnalisables (musique, photos, vidéos, presse, crédits), de les publier publiquement ou de les partager via des liens privés protégés par mot de passe, et de suivre leurs statistiques de consultation.</p>
 
-          <h2>2. Votre compte</h2>
-          <p>Vous devez fournir des informations exactes lors de la création de votre compte et êtes responsable de la confidentialité de votre mot de passe. Vous êtes responsable de toute activité effectuée depuis votre compte. Vous devez avoir au moins 18 ans, ou l'autorisation d'un représentant légal, pour créer un compte.</p>
+          <h2 data-i18n="termsPage.s2Title">2. Votre compte</h2>
+          <p data-i18n="termsPage.s2Body">Vous devez fournir des informations exactes lors de la création de votre compte et êtes responsable de la confidentialité de votre mot de passe. Vous êtes responsable de toute activité effectuée depuis votre compte. Vous devez avoir au moins 18 ans, ou l'autorisation d'un représentant légal, pour créer un compte.</p>
 
-          <h2>3. Abonnements et facturation</h2>
-          <p>Chaque nouvel espace de travail bénéficie d'un essai gratuit de 14 jours. Au-delà, l'accès aux fonctionnalités dépend du plan souscrit (Starter, Pro ou Business), facturé mensuellement ou annuellement via Stripe. Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de facturation ; l'annulation prend effet à la fin de la période déjà payée. Sauf erreur de notre part, les sommes déjà versées ne sont pas remboursables.</p>
+          <h2 data-i18n="termsPage.s3Title">3. Abonnements et facturation</h2>
+          <p data-i18n="termsPage.s3Body">Chaque nouvel espace de travail bénéficie d'un essai gratuit de 14 jours. Au-delà, l'accès aux fonctionnalités dépend du plan souscrit (Starter, Pro ou Business), facturé mensuellement ou annuellement via Stripe. Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de facturation ; l'annulation prend effet à la fin de la période déjà payée. Sauf erreur de notre part, les sommes déjà versées ne sont pas remboursables.</p>
 
-          <h2>4. Utilisation acceptable</h2>
-          <p>Vous vous engagez à ne pas utiliser KORAXX pour :</p>
-          <ul>
+          <h2 data-i18n="termsPage.s4Title">4. Utilisation acceptable</h2>
+          <p data-i18n="termsPage.s4Intro">Vous vous engagez à ne pas utiliser KORAXX pour :</p>
+          <ul data-i18n-html="termsPage.s4List">
             <li>Publier du contenu illégal, diffamatoire, ou portant atteinte aux droits d'un tiers, notamment aux droits d'auteur sur des œuvres musicales que vous ne possédez pas ou n'êtes pas autorisé à diffuser.</li>
             <li>Tenter de contourner les mesures de sécurité du service ou d'accéder à des données qui ne vous appartiennent pas.</li>
             <li>Envoyer des liens privés ou des invitations à des fins de harcèlement ou de spam.</li>
           </ul>
-          <p>Nous nous réservons le droit de suspendre un compte qui enfreint ces règles.</p>
+          <p data-i18n="termsPage.s4Outro">Nous nous réservons le droit de suspendre un compte qui enfreint ces règles.</p>
 
-          <h2>5. Votre contenu</h2>
-          <p>Vous conservez l'intégralité des droits sur le contenu que vous mettez en ligne (biographies, musique, photos, vidéos, documents). En le publiant sur KORAXX, vous nous accordez uniquement le droit technique nécessaire pour l'héberger et l'afficher dans le cadre du service que vous avez configuré (page publique, lien privé, domaine personnalisé). KORAXX, son logo et son interface restent notre propriété.</p>
+          <h2 data-i18n="termsPage.s5Title">5. Votre contenu</h2>
+          <p data-i18n="termsPage.s5Body">Vous conservez l'intégralité des droits sur le contenu que vous mettez en ligne (biographies, musique, photos, vidéos, documents). En le publiant sur KORAXX, vous nous accordez uniquement le droit technique nécessaire pour l'héberger et l'afficher dans le cadre du service que vous avez configuré (page publique, lien privé, domaine personnalisé). KORAXX, son logo et son interface restent notre propriété.</p>
 
-          <h2>6. Disponibilité du service</h2>
-          <p>Nous mettons en œuvre des moyens raisonnables pour maintenir le service disponible, sans garantir une disponibilité ininterrompue. Des interruptions peuvent survenir pour maintenance ou pour des raisons indépendantes de notre volonté.</p>
+          <h2 data-i18n="termsPage.s6Title">6. Disponibilité du service</h2>
+          <p data-i18n="termsPage.s6Body">Nous mettons en œuvre des moyens raisonnables pour maintenir le service disponible, sans garantir une disponibilité ininterrompue. Des interruptions peuvent survenir pour maintenance ou pour des raisons indépendantes de notre volonté.</p>
 
-          <h2>7. Résiliation</h2>
-          <p>Vous pouvez supprimer votre compte à tout moment depuis les paramètres. Nous pouvons suspendre ou résilier un compte en cas de violation de ces conditions, ou de défaut de paiement prolongé, après notification lorsque cela est raisonnablement possible.</p>
+          <h2 data-i18n="termsPage.s7Title">7. Résiliation</h2>
+          <p data-i18n="termsPage.s7Body">Vous pouvez supprimer votre compte à tout moment depuis les paramètres. Nous pouvons suspendre ou résilier un compte en cas de violation de ces conditions, ou de défaut de paiement prolongé, après notification lorsque cela est raisonnablement possible.</p>
 
-          <h2>8. Limitation de responsabilité</h2>
-          <p>Le service est fourni « en l'état ». Dans la mesure permise par la loi, KORAXX ne pourra être tenu responsable des dommages indirects résultant de l'utilisation du service, notamment la perte de données ou de revenus.</p>
+          <h2 data-i18n="termsPage.s8Title">8. Limitation de responsabilité</h2>
+          <p data-i18n="termsPage.s8Body">Le service est fourni « en l'état ». Dans la mesure permise par la loi, KORAXX ne pourra être tenu responsable des dommages indirects résultant de l'utilisation du service, notamment la perte de données ou de revenus.</p>
 
-          <h2>9. Modifications</h2>
-          <p>Nous pouvons modifier ces conditions. En cas de changement significatif, nous vous en informerons par e-mail ou via l'application avant leur entrée en vigueur.</p>
+          <h2 data-i18n="termsPage.s9Title">9. Modifications</h2>
+          <p data-i18n="termsPage.s9Body">Nous pouvons modifier ces conditions. En cas de changement significatif, nous vous en informerons par e-mail ou via l'application avant leur entrée en vigueur.</p>
 
-          <h2>10. Droit applicable</h2>
-          <p>Ces conditions sont régies par le droit <span class="legal-placeholder">[droit français]</span>. Tout litige relève de la compétence des tribunaux <span class="legal-placeholder">[ville / juridiction compétente]</span>, sous réserve des dispositions impératives applicables aux consommateurs.</p>
+          <h2 data-i18n="termsPage.s10Title">10. Droit applicable</h2>
+          <p data-i18n-html="termsPage.s10Body">Ces conditions sont régies par le droit <span class="legal-placeholder">[droit français]</span>. Tout litige relève de la compétence des tribunaux <span class="legal-placeholder">[ville / juridiction compétente]</span>, sous réserve des dispositions impératives applicables aux consommateurs.</p>
 
-          <h2>11. Nous contacter</h2>
-          <p>Pour toute question sur ces conditions, écrivez-nous à <span class="legal-placeholder">[legal@koraxx.fr]</span>.</p>
+          <h2 data-i18n="termsPage.s11Title">11. Nous contacter</h2>
+          <p data-i18n-html="termsPage.s11Body">Pour toute question sur ces conditions, écrivez-nous à <span class="legal-placeholder">[legal@koraxx.fr]</span>.</p>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@
     })();
   </script>
 </head>
-<body>
+<body data-i18n-page="notfound">
   <header class="site-header" data-site-header>
     <div class="container">
       <a href="/" class="brand" aria-label="KORAXX">

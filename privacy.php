@@ -21,7 +21,7 @@
     })();
   </script>
 </head>
-<body>
+<body data-i18n-page="privacyPage">
   <header class="site-header" data-site-header>
     <div class="container">
       <a href="/" class="brand" aria-label="KORAXX">
@@ -47,30 +47,30 @@
       <div class="container">
         <a href="/" class="legal-back">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
-          Retour à l'accueil
+          <span data-i18n="legalPage.back">Retour à l'accueil</span>
         </a>
 
-        <h1>Politique de confidentialité</h1>
-        <p class="legal-updated">Dernière mise à jour : 15 septembre 2026</p>
+        <h1 data-i18n="privacyPage.title">Politique de confidentialité</h1>
+        <p class="legal-updated" data-i18n="privacyPage.updated">Dernière mise à jour : 15 septembre 2026</p>
 
         <div class="legal-content">
-          <p>Cette politique explique quelles données KORAXX collecte lorsque vous utilisez notre site et notre application, pourquoi nous les collectons, et les droits dont vous disposez. Ce document couvre à la fois <strong>koraxx.fr</strong> (ce site) et <strong>app.koraxx.fr</strong> (l'application).</p>
+          <p data-i18n-html="privacyPage.intro">Cette politique explique quelles données KORAXX collecte lorsque vous utilisez notre site et notre application, pourquoi nous les collectons, et les droits dont vous disposez. Ce document couvre à la fois <strong>koraxx.fr</strong> (ce site) et <strong>app.koraxx.fr</strong> (l'application).</p>
 
-          <h2>1. Qui est responsable de vos données</h2>
-          <p><span class="legal-placeholder">[Nom de l'entité légale]</span>, <span class="legal-placeholder">[forme juridique, ex. SASU]</span> immatriculée sous le numéro <span class="legal-placeholder">[SIRET / n° d'immatriculation]</span>, dont le siège est situé <span class="legal-placeholder">[adresse enregistrée]</span>, est responsable du traitement de vos données au sens du Règlement général sur la protection des données (RGPD).</p>
+          <h2 data-i18n="privacyPage.s1Title">1. Qui est responsable de vos données</h2>
+          <p data-i18n-html="privacyPage.s1Body"><span class="legal-placeholder">[Nom de l'entité légale]</span>, <span class="legal-placeholder">[forme juridique, ex. SASU]</span> immatriculée sous le numéro <span class="legal-placeholder">[SIRET / n° d'immatriculation]</span>, dont le siège est situé <span class="legal-placeholder">[adresse enregistrée]</span>, est responsable du traitement de vos données au sens du Règlement général sur la protection des données (RGPD).</p>
 
-          <h2>2. Les données que nous collectons</h2>
-          <p>Lorsque vous créez un compte et utilisez l'application, nous collectons :</p>
-          <ul>
+          <h2 data-i18n="privacyPage.s2Title">2. Les données que nous collectons</h2>
+          <p data-i18n="privacyPage.s2Intro">Lorsque vous créez un compte et utilisez l'application, nous collectons :</p>
+          <ul data-i18n-html="privacyPage.s2List">
             <li><strong>Informations de compte</strong> : nom, adresse e-mail, mot de passe (stocké sous forme chiffrée), photo de profil si vous en ajoutez une.</li>
             <li><strong>Contenu de votre espace de travail</strong> : profils d'artistes, dossiers de presse (EPK) et leur contenu (biographies, musique, photos, vidéos, documents), contacts que vous enregistrez.</li>
             <li><strong>Informations d'équipe</strong> : adresses e-mail des membres que vous invitez et leur rôle.</li>
             <li><strong>Informations de facturation</strong> : votre plan d'abonnement et son statut. Les numéros de carte bancaire ne transitent jamais par nos serveurs — ils sont traités directement par notre prestataire de paiement, Stripe.</li>
           </ul>
-          <p>Lorsqu'une personne consulte un EPK publié que vous avez créé, nous collectons également des données sur ce visiteur, pour vous fournir des statistiques : un identifiant anonymisé (haché) du visiteur, le pays et le type d'appareil approximatifs, le site référent, ainsi que les vues et téléchargements. Nous ne stockons pas l'adresse IP brute des visiteurs.</p>
+          <p data-i18n="privacyPage.s2Visitor">Lorsqu'une personne consulte un EPK publié que vous avez créé, nous collectons également des données sur ce visiteur, pour vous fournir des statistiques : un identifiant anonymisé (haché) du visiteur, le pays et le type d'appareil approximatifs, le site référent, ainsi que les vues et téléchargements. Nous ne stockons pas l'adresse IP brute des visiteurs.</p>
 
-          <h2>3. Pourquoi nous utilisons ces données</h2>
-          <ul>
+          <h2 data-i18n="privacyPage.s3Title">3. Pourquoi nous utilisons ces données</h2>
+          <ul data-i18n-html="privacyPage.s3List">
             <li>Fournir, maintenir et sécuriser le service (créer votre compte, afficher vos EPK, gérer les accès de votre équipe).</li>
             <li>Traiter les paiements et gérer votre abonnement.</li>
             <li>Vous envoyer les e-mails nécessaires au fonctionnement du service (confirmation de compte, notifications d'activité, informations de facturation).</li>
@@ -78,31 +78,31 @@
             <li>Répondre à vos demandes lorsque vous nous contactez.</li>
           </ul>
 
-          <h2>4. Avec qui nous partageons ces données</h2>
-          <p>Nous ne vendons aucune donnée. Nous faisons appel à un nombre limité de sous-traitants pour faire fonctionner le service :</p>
-          <ul>
+          <h2 data-i18n="privacyPage.s4Title">4. Avec qui nous partageons ces données</h2>
+          <p data-i18n="privacyPage.s4Intro">Nous ne vendons aucune donnée. Nous faisons appel à un nombre limité de sous-traitants pour faire fonctionner le service :</p>
+          <ul data-i18n-html="privacyPage.s4List">
             <li><strong>Stripe</strong>, pour le traitement des paiements et la facturation.</li>
             <li><strong>Notre hébergeur</strong>, pour le stockage des données et des fichiers.</li>
           </ul>
-          <p>Ces prestataires n'ont accès qu'aux données strictement nécessaires à l'exécution de leur mission et sont eux-mêmes tenus à des obligations de confidentialité.</p>
+          <p data-i18n="privacyPage.s4Outro">Ces prestataires n'ont accès qu'aux données strictement nécessaires à l'exécution de leur mission et sont eux-mêmes tenus à des obligations de confidentialité.</p>
 
-          <h2>5. Cookies et technologies similaires</h2>
-          <p>Le détail des cookies et technologies de stockage utilisés par koraxx.fr et par l'application figure dans notre <a href="/cookies">politique relative aux cookies</a>.</p>
+          <h2 data-i18n="privacyPage.s5Title">5. Cookies et technologies similaires</h2>
+          <p data-i18n-html="privacyPage.s5Body">Le détail des cookies et technologies de stockage utilisés par koraxx.fr et par l'application figure dans notre <a href="/cookies">politique relative aux cookies</a>.</p>
 
-          <h2>6. Durée de conservation</h2>
-          <p>Nous conservons vos données tant que votre compte est actif. Si vous supprimez votre compte, vos données personnelles et le contenu de votre espace de travail sont supprimés dans un délai raisonnable, sauf obligation légale de conservation plus longue (notamment les données de facturation).</p>
+          <h2 data-i18n="privacyPage.s6Title">6. Durée de conservation</h2>
+          <p data-i18n="privacyPage.s6Body">Nous conservons vos données tant que votre compte est actif. Si vous supprimez votre compte, vos données personnelles et le contenu de votre espace de travail sont supprimés dans un délai raisonnable, sauf obligation légale de conservation plus longue (notamment les données de facturation).</p>
 
-          <h2>7. Vos droits</h2>
-          <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits directement depuis les paramètres de votre compte, ou en nous contactant à l'adresse ci-dessous. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>
+          <h2 data-i18n="privacyPage.s7Title">7. Vos droits</h2>
+          <p data-i18n="privacyPage.s7Body">Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits directement depuis les paramètres de votre compte, ou en nous contactant à l'adresse ci-dessous. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>
 
-          <h2>8. Sécurité</h2>
-          <p>Vos mots de passe sont stockés sous forme chiffrée. Les communications entre votre navigateur et nos serveurs sont chiffrées (HTTPS). L'accès aux données de production est limité aux personnes qui en ont besoin pour faire fonctionner le service.</p>
+          <h2 data-i18n="privacyPage.s8Title">8. Sécurité</h2>
+          <p data-i18n="privacyPage.s8Body">Vos mots de passe sont stockés sous forme chiffrée. Les communications entre votre navigateur et nos serveurs sont chiffrées (HTTPS). L'accès aux données de production est limité aux personnes qui en ont besoin pour faire fonctionner le service.</p>
 
-          <h2>9. Modifications de cette politique</h2>
-          <p>Nous pouvons mettre à jour cette politique de temps à autre. La date de dernière mise à jour figure en haut de cette page. En cas de changement significatif, nous vous en informerons par e-mail ou via l'application.</p>
+          <h2 data-i18n="privacyPage.s9Title">9. Modifications de cette politique</h2>
+          <p data-i18n="privacyPage.s9Body">Nous pouvons mettre à jour cette politique de temps à autre. La date de dernière mise à jour figure en haut de cette page. En cas de changement significatif, nous vous en informerons par e-mail ou via l'application.</p>
 
-          <h2>10. Nous contacter</h2>
-          <p>Pour toute question sur cette politique ou pour exercer vos droits, écrivez-nous à <span class="legal-placeholder">[privacy@koraxx.fr]</span>.</p>
+          <h2 data-i18n="privacyPage.s10Title">10. Nous contacter</h2>
+          <p data-i18n-html="privacyPage.s10Body">Pour toute question sur cette politique ou pour exercer vos droits, écrivez-nous à <span class="legal-placeholder">[privacy@koraxx.fr]</span>.</p>
         </div>
       </div>
     </section>

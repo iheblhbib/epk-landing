@@ -133,11 +133,106 @@ window.KORAXX_I18N = {
       "decline": "Decline"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — Page not found"
+      },
       "eyebrow": "404 error",
       "title": "This page took an artistic pause.",
       "body": "The link you followed doesn't exist anymore. Head back home or explore the app.",
       "ctaHome": "Back to home",
       "ctaApp": "Go to the app"
+    },
+    "legalPage": {
+      "back": "Back to home"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — Privacy Policy",
+        "description": "How KORAXX collects, uses, and protects your personal data."
+      },
+      "title": "Privacy Policy",
+      "updated": "Last updated: September 15, 2026",
+      "intro": "This policy explains what data KORAXX collects when you use our website and application, why we collect it, and the rights you have. This document covers both <strong>koraxx.fr</strong> (this website) and <strong>app.koraxx.fr</strong> (the application).",
+      "s1Title": "1. Who is responsible for your data",
+      "s1Body": "<span class=\"legal-placeholder\">[Legal entity name]</span>, <span class=\"legal-placeholder\">[legal form, e.g. SASU]</span> registered under number <span class=\"legal-placeholder\">[SIRET / registration number]</span>, with its registered office at <span class=\"legal-placeholder\">[registered address]</span>, is responsible for processing your data under the General Data Protection Regulation (GDPR).",
+      "s2Title": "2. Data we collect",
+      "s2Intro": "When you create an account and use the application, we collect:",
+      "s2List": "<li><strong>Account information</strong>: name, email address, password (stored encrypted), profile picture if you add one.</li><li><strong>Your workspace content</strong>: artist profiles, electronic press kits (EPKs) and their content (biographies, music, photos, videos, documents), contacts you save.</li><li><strong>Team information</strong>: email addresses of members you invite and their role.</li><li><strong>Billing information</strong>: your subscription plan and its status. Card numbers never pass through our servers — they are processed directly by our payment provider, Stripe.</li>",
+      "s2Visitor": "When someone views an EPK you've published, we also collect data about that visitor to provide you with statistics: an anonymized (hashed) visitor identifier, approximate country and device type, the referring site, and views and downloads. We do not store visitors' raw IP addresses.",
+      "s3Title": "3. Why we use this data",
+      "s3List": "<li>Provide, maintain, and secure the service (create your account, display your EPKs, manage your team's access).</li><li>Process payments and manage your subscription.</li><li>Send you emails necessary for the service to function (account confirmation, activity notifications, billing information).</li><li>Produce viewing statistics for your EPKs.</li><li>Respond to your requests when you contact us.</li>",
+      "s4Title": "4. Who we share this data with",
+      "s4Intro": "We do not sell any data. We use a limited number of subprocessors to run the service:",
+      "s4List": "<li><strong>Stripe</strong>, for payment processing and billing.</li><li><strong>Our hosting provider</strong>, for storing data and files.</li>",
+      "s4Outro": "These providers only have access to the data strictly necessary to perform their role, and are themselves bound by confidentiality obligations.",
+      "s5Title": "5. Cookies and similar technologies",
+      "s5Body": "Details of the cookies and storage technologies used by koraxx.fr and the application are set out in our <a href=\"/cookies\">cookie policy</a>.",
+      "s6Title": "6. Data retention",
+      "s6Body": "We keep your data for as long as your account is active. If you delete your account, your personal data and workspace content are deleted within a reasonable period, unless a longer retention period is legally required (in particular billing data).",
+      "s7Title": "7. Your rights",
+      "s7Body": "Under the GDPR, you have the right to access, rectify, erase, restrict, object to, and port your data. You can exercise these rights directly from your account settings, or by contacting us at the address below. You may also lodge a complaint with the CNIL (the French data protection authority).",
+      "s8Title": "8. Security",
+      "s8Body": "Your passwords are stored encrypted. Communications between your browser and our servers are encrypted (HTTPS). Access to production data is limited to people who need it to run the service.",
+      "s9Title": "9. Changes to this policy",
+      "s9Body": "We may update this policy from time to time. The last-updated date appears at the top of this page. In the event of a significant change, we will notify you by email or via the application.",
+      "s10Title": "10. Contact us",
+      "s10Body": "For any questions about this policy or to exercise your rights, write to us at <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — Terms of Use",
+        "description": "The terms that govern your use of KORAXX."
+      },
+      "title": "Terms of Use",
+      "updated": "Last updated: September 15, 2026",
+      "intro": "These terms govern your use of KORAXX, the platform for creating, customizing, and sharing electronic press kits (EPKs), accessible via <strong>koraxx.fr</strong> and <strong>app.koraxx.fr</strong>. By creating an account, you agree to these terms.",
+      "s1Title": "1. The service",
+      "s1Body": "KORAXX lets you create artist profiles, build electronic press kits from customizable sections (music, photos, videos, press, credits), publish them publicly or share them via password-protected private links, and track their viewing statistics.",
+      "s2Title": "2. Your account",
+      "s2Body": "You must provide accurate information when creating your account and are responsible for keeping your password confidential. You are responsible for all activity carried out from your account. You must be at least 18 years old, or have the authorization of a legal guardian, to create an account.",
+      "s3Title": "3. Subscriptions and billing",
+      "s3Body": "Every new workspace gets a free 14-day trial. Beyond that, access to features depends on the plan you've subscribed to (Starter, Pro, or Business), billed monthly or annually via Stripe. You can cancel your subscription at any time from the billing settings; cancellation takes effect at the end of the period already paid for. Except where we are at fault, amounts already paid are non-refundable.",
+      "s4Title": "4. Acceptable use",
+      "s4Intro": "You agree not to use KORAXX to:",
+      "s4List": "<li>Post illegal or defamatory content, or content that infringes a third party's rights, in particular copyright in musical works you do not own or are not authorized to distribute.</li><li>Attempt to bypass the service's security measures or access data that does not belong to you.</li><li>Send private links or invitations for harassment or spam purposes.</li>",
+      "s4Outro": "We reserve the right to suspend an account that breaches these rules.",
+      "s5Title": "5. Your content",
+      "s5Body": "You retain full rights to the content you upload (biographies, music, photos, videos, documents). By publishing it on KORAXX, you grant us only the technical right necessary to host and display it as part of the service you've configured (public page, private link, custom domain). KORAXX, its logo, and its interface remain our property.",
+      "s6Title": "6. Service availability",
+      "s6Body": "We take reasonable steps to keep the service available, without guaranteeing uninterrupted availability. Interruptions may occur for maintenance or for reasons beyond our control.",
+      "s7Title": "7. Termination",
+      "s7Body": "You can delete your account at any time from the settings. We may suspend or terminate an account in the event of a breach of these terms, or extended non-payment, after notice where reasonably possible.",
+      "s8Title": "8. Limitation of liability",
+      "s8Body": "The service is provided \"as is.\" To the extent permitted by law, KORAXX cannot be held liable for indirect damages resulting from use of the service, including loss of data or revenue.",
+      "s9Title": "9. Changes",
+      "s9Body": "We may amend these terms. In the event of a significant change, we will inform you by email or via the application before it takes effect.",
+      "s10Title": "10. Governing law",
+      "s10Body": "These terms are governed by <span class=\"legal-placeholder\">[French law]</span>. Any dispute falls under the jurisdiction of the <span class=\"legal-placeholder\">[city / competent court]</span> courts, subject to mandatory provisions applicable to consumers.",
+      "s11Title": "11. Contact us",
+      "s11Body": "For any questions about these terms, write to us at <span class=\"legal-placeholder\">[legal@koraxx.fr]</span>."
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — Cookie Policy",
+        "description": "What cookies and storage technologies KORAXX uses, and why."
+      },
+      "title": "Cookie Policy",
+      "updated": "Last updated: September 15, 2026",
+      "intro": "This page explains the cookies and similar storage technologies (such as browser local storage) used on <strong>koraxx.fr</strong> and on <strong>app.koraxx.fr</strong>, and why.",
+      "s1Title": "1. On koraxx.fr (this website)",
+      "s1Intro": "This website does not use any tracking, advertising, or analytics cookies. It only stores three preferences in your browser's local storage:",
+      "s1List": "<li>your chosen theme (light or dark);</li><li>your chosen language;</li><li>whether you've accepted or declined this banner, so we don't show it on every visit.</li>",
+      "s1Outro": "This information stays on your device: it is never sent to our servers or shared with anyone.",
+      "s2Title": "2. On app.koraxx.fr (the application)",
+      "s2Intro": "Once logged in, the application sets two strictly necessary cookies, without which you could not stay logged in:",
+      "s2List": "<li>a <strong>session cookie</strong>, which identifies you as a logged-in user;</li><li>a <strong>security (CSRF) cookie</strong>, which protects your actions against cross-site request forgery.</li>",
+      "s2Outro": "As these cookies are strictly necessary for the service to function, they do not require your consent under applicable regulations, and are deleted when you log out or your session expires.",
+      "s3Title": "3. Third-party cookies",
+      "s3Body": "When you subscribe to or manage a subscription, payment is processed by <strong>Stripe</strong> on a page they host. Stripe may set its own cookies there, governed by their own privacy policy, independent of ours.",
+      "s4Title": "4. Managing your preferences",
+      "s4Body": "You can change your mind at any time on this website by clearing your browser's local storage data for koraxx.fr (usually via your browser's privacy settings), which will show the consent banner again on your next visit.",
+      "s5Title": "5. Contact us",
+      "s5Body": "For any questions about this policy, write to us at <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
     }
   },
   "fr": {
@@ -270,11 +365,106 @@ window.KORAXX_I18N = {
       "decline": "Refuser"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — Page introuvable"
+      },
       "eyebrow": "Erreur 404",
       "title": "Cette page a pris une pause artistique.",
       "body": "Le lien que vous avez suivi n'existe pas ou plus. Retournez à l'accueil ou explorez l'application.",
       "ctaHome": "Retour à l'accueil",
       "ctaApp": "Accéder à l'application"
+    },
+    "legalPage": {
+      "back": "Retour à l'accueil"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — Politique de confidentialité",
+        "description": "Comment KORAXX collecte, utilise et protège vos données personnelles."
+      },
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : 15 septembre 2026",
+      "intro": "Cette politique explique quelles données KORAXX collecte lorsque vous utilisez notre site et notre application, pourquoi nous les collectons, et les droits dont vous disposez. Ce document couvre à la fois <strong>koraxx.fr</strong> (ce site) et <strong>app.koraxx.fr</strong> (l'application).",
+      "s1Title": "1. Qui est responsable de vos données",
+      "s1Body": "<span class=\"legal-placeholder\">[Nom de l'entité légale]</span>, <span class=\"legal-placeholder\">[forme juridique, ex. SASU]</span> immatriculée sous le numéro <span class=\"legal-placeholder\">[SIRET / n° d'immatriculation]</span>, dont le siège est situé <span class=\"legal-placeholder\">[adresse enregistrée]</span>, est responsable du traitement de vos données au sens du Règlement général sur la protection des données (RGPD).",
+      "s2Title": "2. Les données que nous collectons",
+      "s2Intro": "Lorsque vous créez un compte et utilisez l'application, nous collectons :",
+      "s2List": "<li><strong>Informations de compte</strong> : nom, adresse e-mail, mot de passe (stocké sous forme chiffrée), photo de profil si vous en ajoutez une.</li><li><strong>Contenu de votre espace de travail</strong> : profils d'artistes, dossiers de presse (EPK) et leur contenu (biographies, musique, photos, vidéos, documents), contacts que vous enregistrez.</li><li><strong>Informations d'équipe</strong> : adresses e-mail des membres que vous invitez et leur rôle.</li><li><strong>Informations de facturation</strong> : votre plan d'abonnement et son statut. Les numéros de carte bancaire ne transitent jamais par nos serveurs — ils sont traités directement par notre prestataire de paiement, Stripe.</li>",
+      "s2Visitor": "Lorsqu'une personne consulte un EPK publié que vous avez créé, nous collectons également des données sur ce visiteur, pour vous fournir des statistiques : un identifiant anonymisé (haché) du visiteur, le pays et le type d'appareil approximatifs, le site référent, ainsi que les vues et téléchargements. Nous ne stockons pas l'adresse IP brute des visiteurs.",
+      "s3Title": "3. Pourquoi nous utilisons ces données",
+      "s3List": "<li>Fournir, maintenir et sécuriser le service (créer votre compte, afficher vos EPK, gérer les accès de votre équipe).</li><li>Traiter les paiements et gérer votre abonnement.</li><li>Vous envoyer les e-mails nécessaires au fonctionnement du service (confirmation de compte, notifications d'activité, informations de facturation).</li><li>Produire les statistiques de consultation de vos EPK.</li><li>Répondre à vos demandes lorsque vous nous contactez.</li>",
+      "s4Title": "4. Avec qui nous partageons ces données",
+      "s4Intro": "Nous ne vendons aucune donnée. Nous faisons appel à un nombre limité de sous-traitants pour faire fonctionner le service :",
+      "s4List": "<li><strong>Stripe</strong>, pour le traitement des paiements et la facturation.</li><li><strong>Notre hébergeur</strong>, pour le stockage des données et des fichiers.</li>",
+      "s4Outro": "Ces prestataires n'ont accès qu'aux données strictement nécessaires à l'exécution de leur mission et sont eux-mêmes tenus à des obligations de confidentialité.",
+      "s5Title": "5. Cookies et technologies similaires",
+      "s5Body": "Le détail des cookies et technologies de stockage utilisés par koraxx.fr et par l'application figure dans notre <a href=\"/cookies\">politique relative aux cookies</a>.",
+      "s6Title": "6. Durée de conservation",
+      "s6Body": "Nous conservons vos données tant que votre compte est actif. Si vous supprimez votre compte, vos données personnelles et le contenu de votre espace de travail sont supprimés dans un délai raisonnable, sauf obligation légale de conservation plus longue (notamment les données de facturation).",
+      "s7Title": "7. Vos droits",
+      "s7Body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits directement depuis les paramètres de votre compte, ou en nous contactant à l'adresse ci-dessous. Vous pouvez également introduire une réclamation auprès de la CNIL.",
+      "s8Title": "8. Sécurité",
+      "s8Body": "Vos mots de passe sont stockés sous forme chiffrée. Les communications entre votre navigateur et nos serveurs sont chiffrées (HTTPS). L'accès aux données de production est limité aux personnes qui en ont besoin pour faire fonctionner le service.",
+      "s9Title": "9. Modifications de cette politique",
+      "s9Body": "Nous pouvons mettre à jour cette politique de temps à autre. La date de dernière mise à jour figure en haut de cette page. En cas de changement significatif, nous vous en informerons par e-mail ou via l'application.",
+      "s10Title": "10. Nous contacter",
+      "s10Body": "Pour toute question sur cette politique ou pour exercer vos droits, écrivez-nous à <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — Conditions d'utilisation",
+        "description": "Les conditions qui régissent votre utilisation de KORAXX."
+      },
+      "title": "Conditions d'utilisation",
+      "updated": "Dernière mise à jour : 15 septembre 2026",
+      "intro": "Ces conditions régissent votre utilisation de KORAXX, la plateforme de création, personnalisation et partage de dossiers de presse électroniques (EPK), accessible via <strong>koraxx.fr</strong> et <strong>app.koraxx.fr</strong>. En créant un compte, vous acceptez ces conditions.",
+      "s1Title": "1. Le service",
+      "s1Body": "KORAXX vous permet de créer des profils d'artistes, de construire des dossiers de presse électroniques à partir de sections personnalisables (musique, photos, vidéos, presse, crédits), de les publier publiquement ou de les partager via des liens privés protégés par mot de passe, et de suivre leurs statistiques de consultation.",
+      "s2Title": "2. Votre compte",
+      "s2Body": "Vous devez fournir des informations exactes lors de la création de votre compte et êtes responsable de la confidentialité de votre mot de passe. Vous êtes responsable de toute activité effectuée depuis votre compte. Vous devez avoir au moins 18 ans, ou l'autorisation d'un représentant légal, pour créer un compte.",
+      "s3Title": "3. Abonnements et facturation",
+      "s3Body": "Chaque nouvel espace de travail bénéficie d'un essai gratuit de 14 jours. Au-delà, l'accès aux fonctionnalités dépend du plan souscrit (Starter, Pro ou Business), facturé mensuellement ou annuellement via Stripe. Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de facturation ; l'annulation prend effet à la fin de la période déjà payée. Sauf erreur de notre part, les sommes déjà versées ne sont pas remboursables.",
+      "s4Title": "4. Utilisation acceptable",
+      "s4Intro": "Vous vous engagez à ne pas utiliser KORAXX pour :",
+      "s4List": "<li>Publier du contenu illégal, diffamatoire, ou portant atteinte aux droits d'un tiers, notamment aux droits d'auteur sur des œuvres musicales que vous ne possédez pas ou n'êtes pas autorisé à diffuser.</li><li>Tenter de contourner les mesures de sécurité du service ou d'accéder à des données qui ne vous appartiennent pas.</li><li>Envoyer des liens privés ou des invitations à des fins de harcèlement ou de spam.</li>",
+      "s4Outro": "Nous nous réservons le droit de suspendre un compte qui enfreint ces règles.",
+      "s5Title": "5. Votre contenu",
+      "s5Body": "Vous conservez l'intégralité des droits sur le contenu que vous mettez en ligne (biographies, musique, photos, vidéos, documents). En le publiant sur KORAXX, vous nous accordez uniquement le droit technique nécessaire pour l'héberger et l'afficher dans le cadre du service que vous avez configuré (page publique, lien privé, domaine personnalisé). KORAXX, son logo et son interface restent notre propriété.",
+      "s6Title": "6. Disponibilité du service",
+      "s6Body": "Nous mettons en œuvre des moyens raisonnables pour maintenir le service disponible, sans garantir une disponibilité ininterrompue. Des interruptions peuvent survenir pour maintenance ou pour des raisons indépendantes de notre volonté.",
+      "s7Title": "7. Résiliation",
+      "s7Body": "Vous pouvez supprimer votre compte à tout moment depuis les paramètres. Nous pouvons suspendre ou résilier un compte en cas de violation de ces conditions, ou de défaut de paiement prolongé, après notification lorsque cela est raisonnablement possible.",
+      "s8Title": "8. Limitation de responsabilité",
+      "s8Body": "Le service est fourni « en l'état ». Dans la mesure permise par la loi, KORAXX ne pourra être tenu responsable des dommages indirects résultant de l'utilisation du service, notamment la perte de données ou de revenus.",
+      "s9Title": "9. Modifications",
+      "s9Body": "Nous pouvons modifier ces conditions. En cas de changement significatif, nous vous en informerons par e-mail ou via l'application avant leur entrée en vigueur.",
+      "s10Title": "10. Droit applicable",
+      "s10Body": "Ces conditions sont régies par le droit <span class=\"legal-placeholder\">[droit français]</span>. Tout litige relève de la compétence des tribunaux <span class=\"legal-placeholder\">[ville / juridiction compétente]</span>, sous réserve des dispositions impératives applicables aux consommateurs.",
+      "s11Title": "11. Nous contacter",
+      "s11Body": "Pour toute question sur ces conditions, écrivez-nous à <span class=\"legal-placeholder\">[legal@koraxx.fr]</span>."
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — Politique relative aux cookies",
+        "description": "Quels cookies et technologies de stockage KORAXX utilise, et pourquoi."
+      },
+      "title": "Politique relative aux cookies",
+      "updated": "Dernière mise à jour : 15 septembre 2026",
+      "intro": "Cette page explique les cookies et technologies de stockage similaires (comme le <em>local storage</em> du navigateur) utilisés sur <strong>koraxx.fr</strong> et sur <strong>app.koraxx.fr</strong>, et pourquoi.",
+      "s1Title": "1. Sur koraxx.fr (ce site)",
+      "s1Intro": "Ce site n'utilise aucun cookie de suivi, publicitaire ou analytique. Il enregistre uniquement, dans le stockage local de votre navigateur, trois préférences :",
+      "s1List": "<li>le thème choisi (clair ou sombre) ;</li><li>la langue choisie ;</li><li>le fait que vous ayez accepté ou refusé ce bandeau, pour ne pas vous le montrer à chaque visite.</li>",
+      "s1Outro": "Ces informations restent sur votre appareil : elles ne sont jamais envoyées à nos serveurs ni partagées avec qui que ce soit.",
+      "s2Title": "2. Sur app.koraxx.fr (l'application)",
+      "s2Intro": "Une fois connecté, l'application dépose deux cookies strictement nécessaires à son fonctionnement, sans lesquels vous ne pourriez pas rester connecté :",
+      "s2List": "<li>un <strong>cookie de session</strong>, qui vous identifie en tant qu'utilisateur connecté ;</li><li>un <strong>cookie de sécurité (CSRF)</strong>, qui protège vos actions contre les falsifications de requêtes intersites.</li>",
+      "s2Outro": "Ces cookies étant strictement nécessaires au fonctionnement du service, ils ne requièrent pas votre consentement au sens de la réglementation applicable, et sont supprimés à la déconnexion ou à l'expiration de votre session.",
+      "s3Title": "3. Cookies tiers",
+      "s3Body": "Lorsque vous souscrivez ou gérez un abonnement, le paiement est traité par <strong>Stripe</strong> sur une page qu'ils hébergent. Stripe peut y déposer ses propres cookies, régis par leur propre politique de confidentialité, indépendante de la nôtre.",
+      "s4Title": "4. Gérer vos préférences",
+      "s4Body": "Vous pouvez à tout moment changer d'avis sur ce site en effaçant les données de stockage local de votre navigateur pour koraxx.fr (généralement via les réglages de confidentialité de votre navigateur), ce qui réaffichera le bandeau de consentement à votre prochaine visite.",
+      "s5Title": "5. Nous contacter",
+      "s5Body": "Pour toute question sur cette politique, écrivez-nous à <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
     }
   },
   "es": {
@@ -407,11 +597,106 @@ window.KORAXX_I18N = {
       "decline": "Rechazar"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — Página no encontrada"
+      },
       "eyebrow": "Error 404",
       "title": "Esta página se tomó una pausa artística.",
       "body": "El enlace que seguiste ya no existe. Vuelve al inicio o explora la aplicación.",
       "ctaHome": "Volver al inicio",
       "ctaApp": "Ir a la aplicación"
+    },
+    "legalPage": {
+      "back": "Volver al inicio"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — Política de privacidad",
+        "description": "Cómo KORAXX recopila, utiliza y protege tus datos personales."
+      },
+      "title": "Política de privacidad",
+      "updated": "Última actualización: 15 de septiembre de 2026",
+      "intro": "Esta política explica qué datos recopila KORAXX cuando utilizas nuestro sitio web y nuestra aplicación, por qué los recopilamos y los derechos de los que dispones. Este documento cubre tanto <strong>koraxx.fr</strong> (este sitio) como <strong>app.koraxx.fr</strong> (la aplicación).",
+      "s1Title": "1. Quién es responsable de tus datos",
+      "s1Body": "<span class=\"legal-placeholder\">[Nombre de la entidad legal]</span>, <span class=\"legal-placeholder\">[forma jurídica, p. ej. SASU]</span>, inscrita con el número <span class=\"legal-placeholder\">[SIRET / número de registro]</span>, con domicilio social en <span class=\"legal-placeholder\">[dirección registrada]</span>, es responsable del tratamiento de tus datos conforme al Reglamento General de Protección de Datos (RGPD).",
+      "s2Title": "2. Los datos que recopilamos",
+      "s2Intro": "Cuando creas una cuenta y utilizas la aplicación, recopilamos:",
+      "s2List": "<li><strong>Información de la cuenta</strong>: nombre, dirección de correo electrónico, contraseña (almacenada de forma cifrada), foto de perfil si añades una.</li><li><strong>Contenido de tu espacio de trabajo</strong>: perfiles de artista, dossiers de prensa electrónicos (EPK) y su contenido (biografías, música, fotos, vídeos, documentos), contactos que guardas.</li><li><strong>Información del equipo</strong>: direcciones de correo electrónico de los miembros que invitas y su rol.</li><li><strong>Información de facturación</strong>: tu plan de suscripción y su estado. Los números de tarjeta bancaria nunca pasan por nuestros servidores: los procesa directamente nuestro proveedor de pagos, Stripe.</li>",
+      "s2Visitor": "Cuando alguien consulta un EPK publicado por ti, también recopilamos datos sobre ese visitante para ofrecerte estadísticas: un identificador anonimizado (hash) del visitante, el país y el tipo de dispositivo aproximados, el sitio de referencia, así como las vistas y descargas. No almacenamos la dirección IP sin procesar de los visitantes.",
+      "s3Title": "3. Por qué utilizamos estos datos",
+      "s3List": "<li>Prestar, mantener y proteger el servicio (crear tu cuenta, mostrar tus EPK, gestionar el acceso de tu equipo).</li><li>Procesar los pagos y gestionar tu suscripción.</li><li>Enviarte los correos necesarios para el funcionamiento del servicio (confirmación de cuenta, notificaciones de actividad, información de facturación).</li><li>Elaborar las estadísticas de consulta de tus EPK.</li><li>Responder a tus solicitudes cuando nos contactas.</li>",
+      "s4Title": "4. Con quién compartimos estos datos",
+      "s4Intro": "No vendemos ningún dato. Recurrimos a un número limitado de subencargados para operar el servicio:",
+      "s4List": "<li><strong>Stripe</strong>, para el procesamiento de pagos y la facturación.</li><li><strong>Nuestro proveedor de alojamiento</strong>, para el almacenamiento de datos y archivos.</li>",
+      "s4Outro": "Estos proveedores solo tienen acceso a los datos estrictamente necesarios para llevar a cabo su función y están sujetos a sus propias obligaciones de confidencialidad.",
+      "s5Title": "5. Cookies y tecnologías similares",
+      "s5Body": "El detalle de las cookies y tecnologías de almacenamiento utilizadas por koraxx.fr y por la aplicación figura en nuestra <a href=\"/cookies\">política de cookies</a>.",
+      "s6Title": "6. Plazo de conservación",
+      "s6Body": "Conservamos tus datos mientras tu cuenta esté activa. Si eliminas tu cuenta, tus datos personales y el contenido de tu espacio de trabajo se eliminan en un plazo razonable, salvo obligación legal de conservación más prolongada (en particular, los datos de facturación).",
+      "s7Title": "7. Tus derechos",
+      "s7Body": "De conformidad con el RGPD, dispones de derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad de tus datos. Puedes ejercer estos derechos directamente desde los ajustes de tu cuenta, o contactándonos en la dirección indicada más abajo. También puedes presentar una reclamación ante la CNIL (la autoridad francesa de protección de datos).",
+      "s8Title": "8. Seguridad",
+      "s8Body": "Tus contraseñas se almacenan de forma cifrada. Las comunicaciones entre tu navegador y nuestros servidores están cifradas (HTTPS). El acceso a los datos de producción está limitado a las personas que lo necesitan para operar el servicio.",
+      "s9Title": "9. Modificaciones de esta política",
+      "s9Body": "Podemos actualizar esta política de vez en cuando. La fecha de última actualización figura en la parte superior de esta página. En caso de cambio significativo, te lo notificaremos por correo electrónico o a través de la aplicación.",
+      "s10Title": "10. Contacto",
+      "s10Body": "Para cualquier pregunta sobre esta política o para ejercer tus derechos, escríbenos a <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — Condiciones de uso",
+        "description": "Las condiciones que rigen tu uso de KORAXX."
+      },
+      "title": "Condiciones de uso",
+      "updated": "Última actualización: 15 de septiembre de 2026",
+      "intro": "Estas condiciones rigen el uso de KORAXX, la plataforma para crear, personalizar y compartir dossiers de prensa electrónicos (EPK), accesible a través de <strong>koraxx.fr</strong> y <strong>app.koraxx.fr</strong>. Al crear una cuenta, aceptas estas condiciones.",
+      "s1Title": "1. El servicio",
+      "s1Body": "KORAXX te permite crear perfiles de artista, construir dossiers de prensa electrónicos a partir de secciones personalizables (música, fotos, vídeos, prensa, créditos), publicarlos públicamente o compartirlos mediante enlaces privados protegidos por contraseña, y hacer seguimiento de sus estadísticas de visualización.",
+      "s2Title": "2. Tu cuenta",
+      "s2Body": "Debes proporcionar información exacta al crear tu cuenta y eres responsable de la confidencialidad de tu contraseña. Eres responsable de toda actividad realizada desde tu cuenta. Debes tener al menos 18 años, o contar con la autorización de un representante legal, para crear una cuenta.",
+      "s3Title": "3. Suscripciones y facturación",
+      "s3Body": "Cada nuevo espacio de trabajo disfruta de una prueba gratuita de 14 días. Más allá de eso, el acceso a las funciones depende del plan contratado (Starter, Pro o Business), facturado mensual o anualmente a través de Stripe. Puedes cancelar tu suscripción en cualquier momento desde los ajustes de facturación; la cancelación surte efecto al final del período ya pagado. Salvo error por nuestra parte, los importes ya abonados no son reembolsables.",
+      "s4Title": "4. Uso aceptable",
+      "s4Intro": "Te comprometes a no utilizar KORAXX para:",
+      "s4List": "<li>Publicar contenido ilegal, difamatorio o que vulnere los derechos de un tercero, en particular los derechos de autor sobre obras musicales que no posees o que no estás autorizado a distribuir.</li><li>Intentar eludir las medidas de seguridad del servicio o acceder a datos que no te pertenecen.</li><li>Enviar enlaces privados o invitaciones con fines de acoso o spam.</li>",
+      "s4Outro": "Nos reservamos el derecho de suspender una cuenta que infrinja estas normas.",
+      "s5Title": "5. Tu contenido",
+      "s5Body": "Conservas la totalidad de los derechos sobre el contenido que subes (biografías, música, fotos, vídeos, documentos). Al publicarlo en KORAXX, nos concedes únicamente el derecho técnico necesario para alojarlo y mostrarlo en el marco del servicio que has configurado (página pública, enlace privado, dominio personalizado). KORAXX, su logotipo y su interfaz siguen siendo de nuestra propiedad.",
+      "s6Title": "6. Disponibilidad del servicio",
+      "s6Body": "Ponemos en marcha medios razonables para mantener el servicio disponible, sin garantizar una disponibilidad ininterrumpida. Pueden producirse interrupciones por mantenimiento o por razones ajenas a nuestra voluntad.",
+      "s7Title": "7. Resolución",
+      "s7Body": "Puedes eliminar tu cuenta en cualquier momento desde los ajustes. Podemos suspender o resolver una cuenta en caso de incumplimiento de estas condiciones, o de impago prolongado, tras notificación cuando sea razonablemente posible.",
+      "s8Title": "8. Limitación de responsabilidad",
+      "s8Body": "El servicio se presta \"tal cual\". En la medida permitida por la ley, KORAXX no podrá ser considerado responsable de los daños indirectos derivados del uso del servicio, en particular la pérdida de datos o de ingresos.",
+      "s9Title": "9. Modificaciones",
+      "s9Body": "Podemos modificar estas condiciones. En caso de cambio significativo, te informaremos por correo electrónico o a través de la aplicación antes de su entrada en vigor.",
+      "s10Title": "10. Legislación aplicable",
+      "s10Body": "Estas condiciones se rigen por el derecho <span class=\"legal-placeholder\">[francés]</span>. Cualquier litigio será competencia de los tribunales de <span class=\"legal-placeholder\">[ciudad / jurisdicción competente]</span>, sin perjuicio de las disposiciones imperativas aplicables a los consumidores.",
+      "s11Title": "11. Contacto",
+      "s11Body": "Para cualquier pregunta sobre estas condiciones, escríbenos a <span class=\"legal-placeholder\">[legal@koraxx.fr]</span>."
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — Política de cookies",
+        "description": "Qué cookies y tecnologías de almacenamiento utiliza KORAXX, y por qué."
+      },
+      "title": "Política de cookies",
+      "updated": "Última actualización: 15 de septiembre de 2026",
+      "intro": "Esta página explica las cookies y tecnologías de almacenamiento similares (como el almacenamiento local del navegador) utilizadas en <strong>koraxx.fr</strong> y en <strong>app.koraxx.fr</strong>, y por qué.",
+      "s1Title": "1. En koraxx.fr (este sitio)",
+      "s1Intro": "Este sitio no utiliza ninguna cookie de seguimiento, publicitaria o analítica. Solo guarda, en el almacenamiento local de tu navegador, tres preferencias:",
+      "s1List": "<li>el tema elegido (claro u oscuro);</li><li>el idioma elegido;</li><li>si has aceptado o rechazado este aviso, para no mostrártelo en cada visita.</li>",
+      "s1Outro": "Esta información permanece en tu dispositivo: nunca se envía a nuestros servidores ni se comparte con nadie.",
+      "s2Title": "2. En app.koraxx.fr (la aplicación)",
+      "s2Intro": "Una vez conectado, la aplicación instala dos cookies estrictamente necesarias para su funcionamiento, sin las cuales no podrías permanecer conectado:",
+      "s2List": "<li>una <strong>cookie de sesión</strong>, que te identifica como usuario conectado;</li><li>una <strong>cookie de seguridad (CSRF)</strong>, que protege tus acciones contra la falsificación de solicitudes entre sitios.</li>",
+      "s2Outro": "Al ser estrictamente necesarias para el funcionamiento del servicio, estas cookies no requieren tu consentimiento conforme a la normativa aplicable, y se eliminan al cerrar sesión o al expirar tu sesión.",
+      "s3Title": "3. Cookies de terceros",
+      "s3Body": "Cuando contratas o gestionas una suscripción, el pago lo procesa <strong>Stripe</strong> en una página que ellos alojan. Stripe puede instalar allí sus propias cookies, regidas por su propia política de privacidad, independiente de la nuestra.",
+      "s4Title": "4. Gestionar tus preferencias",
+      "s4Body": "Puedes cambiar de opinión en cualquier momento en este sitio borrando los datos de almacenamiento local de tu navegador para koraxx.fr (generalmente a través de los ajustes de privacidad de tu navegador), lo que hará que el aviso de consentimiento vuelva a aparecer en tu próxima visita.",
+      "s5Title": "5. Contacto",
+      "s5Body": "Para cualquier pregunta sobre esta política, escríbenos a <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
     }
   },
   "pt": {
@@ -544,11 +829,106 @@ window.KORAXX_I18N = {
       "decline": "Recusar"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — Página não encontrada"
+      },
       "eyebrow": "Erro 404",
       "title": "Esta página fez uma pausa artística.",
       "body": "O link que você seguiu não existe mais. Volte para o início ou explore o aplicativo.",
       "ctaHome": "Voltar ao início",
       "ctaApp": "Acessar o aplicativo"
+    },
+    "legalPage": {
+      "back": "Voltar ao início"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — Política de Privacidade",
+        "description": "Como a KORAXX recolhe, utiliza e protege os seus dados pessoais."
+      },
+      "title": "Política de Privacidade",
+      "updated": "Última atualização: 15 de setembro de 2026",
+      "intro": "Esta política explica quais dados a KORAXX recolhe quando utiliza o nosso site e a nossa aplicação, por que motivo os recolhemos e quais os direitos de que dispõe. Este documento abrange tanto o <strong>koraxx.fr</strong> (este site) como o <strong>app.koraxx.fr</strong> (a aplicação).",
+      "s1Title": "1. Quem é responsável pelos seus dados",
+      "s1Body": "<span class=\"legal-placeholder\">[Nome da entidade legal]</span>, <span class=\"legal-placeholder\">[forma jurídica, p. ex. SASU]</span>, registada sob o número <span class=\"legal-placeholder\">[SIRET / número de registo]</span>, com sede em <span class=\"legal-placeholder\">[morada registada]</span>, é responsável pelo tratamento dos seus dados nos termos do Regulamento Geral sobre a Proteção de Dados (RGPD).",
+      "s2Title": "2. Os dados que recolhemos",
+      "s2Intro": "Quando cria uma conta e utiliza a aplicação, recolhemos:",
+      "s2List": "<li><strong>Informações da conta</strong>: nome, endereço de e-mail, palavra-passe (armazenada de forma cifrada), foto de perfil, caso adicione uma.</li><li><strong>Conteúdo do seu espaço de trabalho</strong>: perfis de artista, dossiês de imprensa eletrónicos (EPK) e o seu conteúdo (biografias, música, fotos, vídeos, documentos), contactos que guarda.</li><li><strong>Informações da equipa</strong>: endereços de e-mail dos membros que convida e a respetiva função.</li><li><strong>Informações de faturação</strong>: o seu plano de subscrição e o respetivo estado. Os números de cartão bancário nunca passam pelos nossos servidores — são processados diretamente pelo nosso prestador de pagamentos, a Stripe.</li>",
+      "s2Visitor": "Quando alguém consulta um EPK publicado por si, também recolhemos dados sobre esse visitante, para lhe fornecer estatísticas: um identificador anonimizado (hash) do visitante, o país e o tipo de dispositivo aproximados, o site de origem, bem como as visualizações e transferências. Não armazenamos o endereço IP em bruto dos visitantes.",
+      "s3Title": "3. Porque utilizamos estes dados",
+      "s3List": "<li>Fornecer, manter e proteger o serviço (criar a sua conta, apresentar os seus EPK, gerir os acessos da sua equipa).</li><li>Processar pagamentos e gerir a sua subscrição.</li><li>Enviar-lhe os e-mails necessários ao funcionamento do serviço (confirmação de conta, notificações de atividade, informações de faturação).</li><li>Produzir as estatísticas de consulta dos seus EPK.</li><li>Responder aos seus pedidos quando nos contacta.</li>",
+      "s4Title": "4. Com quem partilhamos estes dados",
+      "s4Intro": "Não vendemos quaisquer dados. Recorremos a um número limitado de subcontratantes para operar o serviço:",
+      "s4List": "<li><strong>Stripe</strong>, para o processamento de pagamentos e faturação.</li><li><strong>O nosso fornecedor de alojamento</strong>, para o armazenamento de dados e ficheiros.</li>",
+      "s4Outro": "Estes prestadores apenas têm acesso aos dados estritamente necessários para o exercício da sua função e estão eles próprios sujeitos a obrigações de confidencialidade.",
+      "s5Title": "5. Cookies e tecnologias semelhantes",
+      "s5Body": "O detalhe dos cookies e tecnologias de armazenamento utilizados pelo koraxx.fr e pela aplicação consta da nossa <a href=\"/cookies\">política de cookies</a>.",
+      "s6Title": "6. Prazo de conservação",
+      "s6Body": "Conservamos os seus dados enquanto a sua conta estiver ativa. Se eliminar a sua conta, os seus dados pessoais e o conteúdo do seu espaço de trabalho são eliminados num prazo razoável, salvo obrigação legal de conservação mais prolongada (nomeadamente os dados de faturação).",
+      "s7Title": "7. Os seus direitos",
+      "s7Body": "Nos termos do RGPD, dispõe do direito de acesso, retificação, apagamento, limitação, oposição e portabilidade dos seus dados. Pode exercer estes direitos diretamente a partir das definições da sua conta, ou contactando-nos através do endereço abaixo. Pode também apresentar uma reclamação junto da CNIL (a autoridade francesa de proteção de dados).",
+      "s8Title": "8. Segurança",
+      "s8Body": "As suas palavras-passe são armazenadas de forma cifrada. As comunicações entre o seu navegador e os nossos servidores são cifradas (HTTPS). O acesso aos dados de produção está limitado às pessoas que dele necessitam para operar o serviço.",
+      "s9Title": "9. Alterações a esta política",
+      "s9Body": "Podemos atualizar esta política periodicamente. A data da última atualização consta no topo desta página. Em caso de alteração significativa, informá-lo-emos por e-mail ou através da aplicação.",
+      "s10Title": "10. Contacte-nos",
+      "s10Body": "Para qualquer questão sobre esta política ou para exercer os seus direitos, escreva-nos para <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — Termos de Utilização",
+        "description": "As condições que regem a sua utilização da KORAXX."
+      },
+      "title": "Termos de Utilização",
+      "updated": "Última atualização: 15 de setembro de 2026",
+      "intro": "Estes termos regem a sua utilização da KORAXX, a plataforma de criação, personalização e partilha de dossiês de imprensa eletrónicos (EPK), acessível através do <strong>koraxx.fr</strong> e do <strong>app.koraxx.fr</strong>. Ao criar uma conta, aceita estes termos.",
+      "s1Title": "1. O serviço",
+      "s1Body": "A KORAXX permite-lhe criar perfis de artista, construir dossiês de imprensa eletrónicos a partir de secções personalizáveis (música, fotos, vídeos, imprensa, créditos), publicá-los publicamente ou partilhá-los através de ligações privadas protegidas por palavra-passe, e acompanhar as respetivas estatísticas de visualização.",
+      "s2Title": "2. A sua conta",
+      "s2Body": "Deve fornecer informações exatas ao criar a sua conta e é responsável pela confidencialidade da sua palavra-passe. É responsável por toda a atividade realizada a partir da sua conta. Deve ter pelo menos 18 anos, ou a autorização de um representante legal, para criar uma conta.",
+      "s3Title": "3. Subscrições e faturação",
+      "s3Body": "Cada novo espaço de trabalho beneficia de um período experimental gratuito de 14 dias. Além disso, o acesso às funcionalidades depende do plano subscrito (Starter, Pro ou Business), faturado mensal ou anualmente através da Stripe. Pode cancelar a sua subscrição a qualquer momento nas definições de faturação; o cancelamento produz efeitos no final do período já pago. Salvo erro da nossa parte, os montantes já pagos não são reembolsáveis.",
+      "s4Title": "4. Utilização aceitável",
+      "s4Intro": "Compromete-se a não utilizar a KORAXX para:",
+      "s4List": "<li>Publicar conteúdo ilegal, difamatório ou que viole os direitos de terceiros, nomeadamente direitos de autor sobre obras musicais que não possui ou não está autorizado a distribuir.</li><li>Tentar contornar as medidas de segurança do serviço ou aceder a dados que não lhe pertencem.</li><li>Enviar ligações privadas ou convites com fins de assédio ou spam.</li>",
+      "s4Outro": "Reservamo-nos o direito de suspender uma conta que viole estas regras.",
+      "s5Title": "5. O seu conteúdo",
+      "s5Body": "Mantém a totalidade dos direitos sobre o conteúdo que carrega (biografias, música, fotos, vídeos, documentos). Ao publicá-lo na KORAXX, concede-nos apenas o direito técnico necessário para o alojar e apresentar no âmbito do serviço que configurou (página pública, ligação privada, domínio personalizado). A KORAXX, o seu logótipo e a sua interface permanecem propriedade nossa.",
+      "s6Title": "6. Disponibilidade do serviço",
+      "s6Body": "Envidamos esforços razoáveis para manter o serviço disponível, sem garantir uma disponibilidade ininterrupta. Podem ocorrer interrupções por motivos de manutenção ou por razões alheias à nossa vontade.",
+      "s7Title": "7. Rescisão",
+      "s7Body": "Pode eliminar a sua conta a qualquer momento nas definições. Podemos suspender ou rescindir uma conta em caso de violação destes termos, ou de incumprimento de pagamento prolongado, após notificação sempre que razoavelmente possível.",
+      "s8Title": "8. Limitação de responsabilidade",
+      "s8Body": "O serviço é fornecido \"tal como está\". Na medida permitida por lei, a KORAXX não poderá ser responsabilizada por danos indiretos resultantes da utilização do serviço, nomeadamente a perda de dados ou de receitas.",
+      "s9Title": "9. Alterações",
+      "s9Body": "Podemos alterar estes termos. Em caso de alteração significativa, informá-lo-emos por e-mail ou através da aplicação antes da sua entrada em vigor.",
+      "s10Title": "10. Lei aplicável",
+      "s10Body": "Estes termos regem-se pelo direito <span class=\"legal-placeholder\">[francês]</span>. Qualquer litígio é da competência dos tribunais de <span class=\"legal-placeholder\">[cidade / jurisdição competente]</span>, sem prejuízo das disposições imperativas aplicáveis aos consumidores.",
+      "s11Title": "11. Contacte-nos",
+      "s11Body": "Para qualquer questão sobre estes termos, escreva-nos para <span class=\"legal-placeholder\">[legal@koraxx.fr]</span>."
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — Política de Cookies",
+        "description": "Que cookies e tecnologias de armazenamento a KORAXX utiliza, e porquê."
+      },
+      "title": "Política de Cookies",
+      "updated": "Última atualização: 15 de setembro de 2026",
+      "intro": "Esta página explica os cookies e tecnologias de armazenamento semelhantes (como o armazenamento local do navegador) utilizados no <strong>koraxx.fr</strong> e no <strong>app.koraxx.fr</strong>, e porquê.",
+      "s1Title": "1. No koraxx.fr (este site)",
+      "s1Intro": "Este site não utiliza quaisquer cookies de rastreio, publicitários ou analíticos. Regista apenas, no armazenamento local do seu navegador, três preferências:",
+      "s1List": "<li>o tema escolhido (claro ou escuro);</li><li>o idioma escolhido;</li><li>se aceitou ou recusou este aviso, para não voltar a mostrá-lo em cada visita.</li>",
+      "s1Outro": "Estas informações permanecem no seu dispositivo: nunca são enviadas para os nossos servidores nem partilhadas com ninguém.",
+      "s2Title": "2. No app.koraxx.fr (a aplicação)",
+      "s2Intro": "Depois de iniciar sessão, a aplicação define dois cookies estritamente necessários ao seu funcionamento, sem os quais não seria possível manter-se autenticado:",
+      "s2List": "<li>um <strong>cookie de sessão</strong>, que o identifica como utilizador autenticado;</li><li>um <strong>cookie de segurança (CSRF)</strong>, que protege as suas ações contra falsificação de pedidos entre sites.</li>",
+      "s2Outro": "Sendo estritamente necessários ao funcionamento do serviço, estes cookies não requerem o seu consentimento nos termos da regulamentação aplicável, e são eliminados ao terminar sessão ou quando a sua sessão expira.",
+      "s3Title": "3. Cookies de terceiros",
+      "s3Body": "Quando subscreve ou gere uma subscrição, o pagamento é processado pela <strong>Stripe</strong> numa página por eles alojada. A Stripe pode aí definir os seus próprios cookies, regidos pela sua própria política de privacidade, independente da nossa.",
+      "s4Title": "4. Gerir as suas preferências",
+      "s4Body": "Pode mudar de ideias a qualquer momento neste site apagando os dados de armazenamento local do seu navegador relativos ao koraxx.fr (normalmente através das definições de privacidade do seu navegador), o que fará com que o aviso de consentimento volte a aparecer na sua próxima visita.",
+      "s5Title": "5. Contacte-nos",
+      "s5Body": "Para qualquer questão sobre esta política, escreva-nos para <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
     }
   },
   "de": {
@@ -681,11 +1061,106 @@ window.KORAXX_I18N = {
       "decline": "Ablehnen"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — Seite nicht gefunden"
+      },
       "eyebrow": "Fehler 404",
       "title": "Diese Seite hat eine künstlerische Pause eingelegt.",
       "body": "Der Link, dem du gefolgt bist, existiert nicht mehr. Kehre zur Startseite zurück oder entdecke die Anwendung.",
       "ctaHome": "Zurück zur Startseite",
       "ctaApp": "Zur Anwendung"
+    },
+    "legalPage": {
+      "back": "Zurück zur Startseite"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — Datenschutzerklärung",
+        "description": "Wie KORAXX Ihre personenbezogenen Daten erhebt, nutzt und schützt."
+      },
+      "title": "Datenschutzerklärung",
+      "updated": "Zuletzt aktualisiert: 15. September 2026",
+      "intro": "Diese Richtlinie erklärt, welche Daten KORAXX erhebt, wenn Sie unsere Website und unsere Anwendung nutzen, warum wir sie erheben und welche Rechte Ihnen zustehen. Dieses Dokument gilt sowohl für <strong>koraxx.fr</strong> (diese Website) als auch für <strong>app.koraxx.fr</strong> (die Anwendung).",
+      "s1Title": "1. Wer für Ihre Daten verantwortlich ist",
+      "s1Body": "<span class=\"legal-placeholder\">[Name der juristischen Person]</span>, <span class=\"legal-placeholder\">[Rechtsform, z. B. SASU]</span>, eingetragen unter der Nummer <span class=\"legal-placeholder\">[SIRET / Registrierungsnummer]</span>, mit Sitz in <span class=\"legal-placeholder\">[eingetragene Adresse]</span>, ist im Sinne der Datenschutz-Grundverordnung (DSGVO) für die Verarbeitung Ihrer Daten verantwortlich.",
+      "s2Title": "2. Daten, die wir erheben",
+      "s2Intro": "Wenn Sie ein Konto erstellen und die Anwendung nutzen, erheben wir:",
+      "s2List": "<li><strong>Kontoinformationen</strong>: Name, E-Mail-Adresse, Passwort (verschlüsselt gespeichert), Profilbild, falls Sie eines hinzufügen.</li><li><strong>Inhalte Ihres Arbeitsbereichs</strong>: Künstlerprofile, elektronische Pressemappen (EPK) und deren Inhalte (Biografien, Musik, Fotos, Videos, Dokumente), von Ihnen gespeicherte Kontakte.</li><li><strong>Team-Informationen</strong>: E-Mail-Adressen der von Ihnen eingeladenen Mitglieder und deren Rolle.</li><li><strong>Abrechnungsinformationen</strong>: Ihr Abonnementplan und dessen Status. Kartennummern durchlaufen niemals unsere Server — sie werden direkt von unserem Zahlungsdienstleister Stripe verarbeitet.</li>",
+      "s2Visitor": "Wenn jemand ein von Ihnen veröffentlichtes EPK aufruft, erheben wir außerdem Daten zu diesem Besucher, um Ihnen Statistiken bereitzustellen: eine anonymisierte (gehashte) Besucherkennung, das ungefähre Land und den Gerätetyp, die verweisende Website sowie Aufrufe und Downloads. Wir speichern keine rohen IP-Adressen von Besuchern.",
+      "s3Title": "3. Warum wir diese Daten verwenden",
+      "s3List": "<li>Bereitstellung, Wartung und Absicherung des Dienstes (Erstellen Ihres Kontos, Anzeigen Ihrer EPKs, Verwaltung der Zugriffsrechte Ihres Teams).</li><li>Verarbeitung von Zahlungen und Verwaltung Ihres Abonnements.</li><li>Versand der für den Betrieb des Dienstes erforderlichen E-Mails (Kontobestätigung, Aktivitätsbenachrichtigungen, Abrechnungsinformationen).</li><li>Erstellung von Nutzungsstatistiken für Ihre EPKs.</li><li>Beantwortung Ihrer Anfragen, wenn Sie uns kontaktieren.</li>",
+      "s4Title": "4. Mit wem wir diese Daten teilen",
+      "s4Intro": "Wir verkaufen keine Daten. Wir setzen eine begrenzte Anzahl von Auftragsverarbeitern für den Betrieb des Dienstes ein:",
+      "s4List": "<li><strong>Stripe</strong>, für die Zahlungsabwicklung und Abrechnung.</li><li><strong>Unser Hosting-Anbieter</strong>, für die Speicherung von Daten und Dateien.</li>",
+      "s4Outro": "Diese Anbieter haben nur Zugriff auf die für ihre Aufgabe unbedingt erforderlichen Daten und unterliegen selbst Vertraulichkeitspflichten.",
+      "s5Title": "5. Cookies und ähnliche Technologien",
+      "s5Body": "Details zu den von koraxx.fr und der Anwendung verwendeten Cookies und Speichertechnologien finden Sie in unserer <a href=\"/cookies\">Cookie-Richtlinie</a>.",
+      "s6Title": "6. Aufbewahrungsdauer",
+      "s6Body": "Wir bewahren Ihre Daten auf, solange Ihr Konto aktiv ist. Wenn Sie Ihr Konto löschen, werden Ihre personenbezogenen Daten und die Inhalte Ihres Arbeitsbereichs innerhalb einer angemessenen Frist gelöscht, sofern keine längere gesetzliche Aufbewahrungspflicht besteht (insbesondere für Abrechnungsdaten).",
+      "s7Title": "7. Ihre Rechte",
+      "s7Body": "Gemäß der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Übertragbarkeit Ihrer Daten. Sie können diese Rechte direkt über Ihre Kontoeinstellungen oder durch Kontaktaufnahme unter der unten stehenden Adresse ausüben. Sie können außerdem eine Beschwerde bei der CNIL (der französischen Datenschutzbehörde) einreichen.",
+      "s8Title": "8. Sicherheit",
+      "s8Body": "Ihre Passwörter werden verschlüsselt gespeichert. Die Kommunikation zwischen Ihrem Browser und unseren Servern ist verschlüsselt (HTTPS). Der Zugriff auf Produktionsdaten ist auf Personen beschränkt, die ihn zum Betrieb des Dienstes benötigen.",
+      "s9Title": "9. Änderungen dieser Richtlinie",
+      "s9Body": "Wir können diese Richtlinie von Zeit zu Zeit aktualisieren. Das Datum der letzten Aktualisierung erscheint oben auf dieser Seite. Bei wesentlichen Änderungen informieren wir Sie per E-Mail oder über die Anwendung.",
+      "s10Title": "10. Kontakt",
+      "s10Body": "Bei Fragen zu dieser Richtlinie oder zur Ausübung Ihrer Rechte schreiben Sie uns an <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — Nutzungsbedingungen",
+        "description": "Die Bedingungen, die Ihre Nutzung von KORAXX regeln."
+      },
+      "title": "Nutzungsbedingungen",
+      "updated": "Zuletzt aktualisiert: 15. September 2026",
+      "intro": "Diese Bedingungen regeln Ihre Nutzung von KORAXX, der Plattform zum Erstellen, Anpassen und Teilen elektronischer Pressemappen (EPK), erreichbar über <strong>koraxx.fr</strong> und <strong>app.koraxx.fr</strong>. Mit der Erstellung eines Kontos akzeptieren Sie diese Bedingungen.",
+      "s1Title": "1. Der Dienst",
+      "s1Body": "Mit KORAXX können Sie Künstlerprofile erstellen, elektronische Pressemappen aus anpassbaren Abschnitten (Musik, Fotos, Videos, Presse, Credits) zusammenstellen, diese öffentlich veröffentlichen oder über passwortgeschützte private Links teilen und deren Aufrufstatistiken verfolgen.",
+      "s2Title": "2. Ihr Konto",
+      "s2Body": "Sie müssen bei der Erstellung Ihres Kontos korrekte Angaben machen und sind für die Geheimhaltung Ihres Passworts verantwortlich. Sie sind für jede Aktivität verantwortlich, die von Ihrem Konto aus durchgeführt wird. Sie müssen mindestens 18 Jahre alt sein oder die Zustimmung eines gesetzlichen Vertreters haben, um ein Konto zu erstellen.",
+      "s3Title": "3. Abonnements und Abrechnung",
+      "s3Body": "Jeder neue Arbeitsbereich erhält eine kostenlose 14-tägige Testphase. Danach hängt der Zugriff auf Funktionen vom gewählten Plan ab (Starter, Pro oder Business), der monatlich oder jährlich über Stripe abgerechnet wird. Sie können Ihr Abonnement jederzeit in den Abrechnungseinstellungen kündigen; die Kündigung wird zum Ende des bereits bezahlten Zeitraums wirksam. Außer bei einem Fehler unsererseits sind bereits gezahlte Beträge nicht erstattungsfähig.",
+      "s4Title": "4. Zulässige Nutzung",
+      "s4Intro": "Sie verpflichten sich, KORAXX nicht zu nutzen, um:",
+      "s4List": "<li>rechtswidrige, diffamierende Inhalte oder Inhalte zu veröffentlichen, die Rechte Dritter verletzen, insbesondere Urheberrechte an Musikwerken, die Ihnen nicht gehören oder die Sie nicht verbreiten dürfen;</li><li>zu versuchen, die Sicherheitsmaßnahmen des Dienstes zu umgehen oder auf Daten zuzugreifen, die Ihnen nicht gehören;</li><li>private Links oder Einladungen zu Belästigungs- oder Spam-Zwecken zu versenden.</li>",
+      "s4Outro": "Wir behalten uns das Recht vor, ein Konto zu sperren, das gegen diese Regeln verstößt.",
+      "s5Title": "5. Ihre Inhalte",
+      "s5Body": "Sie behalten sämtliche Rechte an den von Ihnen hochgeladenen Inhalten (Biografien, Musik, Fotos, Videos, Dokumente). Durch die Veröffentlichung auf KORAXX räumen Sie uns lediglich das technische Recht ein, diese im Rahmen des von Ihnen konfigurierten Dienstes zu hosten und anzuzeigen (öffentliche Seite, privater Link, benutzerdefinierte Domain). KORAXX, sein Logo und seine Oberfläche bleiben unser Eigentum.",
+      "s6Title": "6. Verfügbarkeit des Dienstes",
+      "s6Body": "Wir setzen angemessene Mittel ein, um den Dienst verfügbar zu halten, ohne eine unterbrechungsfreie Verfügbarkeit zu garantieren. Unterbrechungen können aufgrund von Wartungsarbeiten oder aus Gründen außerhalb unserer Kontrolle auftreten.",
+      "s7Title": "7. Kündigung",
+      "s7Body": "Sie können Ihr Konto jederzeit in den Einstellungen löschen. Wir können ein Konto bei einem Verstoß gegen diese Bedingungen oder bei anhaltendem Zahlungsverzug sperren oder kündigen, nach vorheriger Benachrichtigung, sofern dies zumutbar möglich ist.",
+      "s8Title": "8. Haftungsbeschränkung",
+      "s8Body": "Der Dienst wird \"wie besehen\" bereitgestellt. Soweit gesetzlich zulässig, haftet KORAXX nicht für mittelbare Schäden, die sich aus der Nutzung des Dienstes ergeben, insbesondere für den Verlust von Daten oder Einnahmen.",
+      "s9Title": "9. Änderungen",
+      "s9Body": "Wir können diese Bedingungen ändern. Bei wesentlichen Änderungen informieren wir Sie vor deren Inkrafttreten per E-Mail oder über die Anwendung.",
+      "s10Title": "10. Anwendbares Recht",
+      "s10Body": "Diese Bedingungen unterliegen dem <span class=\"legal-placeholder\">[französischen]</span> Recht. Für Streitigkeiten sind die Gerichte in <span class=\"legal-placeholder\">[Stadt / zuständige Gerichtsbarkeit]</span> zuständig, vorbehaltlich zwingender Verbraucherschutzvorschriften.",
+      "s11Title": "11. Kontakt",
+      "s11Body": "Bei Fragen zu diesen Bedingungen schreiben Sie uns an <span class=\"legal-placeholder\">[legal@koraxx.fr]</span>."
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — Cookie-Richtlinie",
+        "description": "Welche Cookies und Speichertechnologien KORAXX verwendet, und warum."
+      },
+      "title": "Cookie-Richtlinie",
+      "updated": "Zuletzt aktualisiert: 15. September 2026",
+      "intro": "Diese Seite erklärt die Cookies und ähnlichen Speichertechnologien (wie den lokalen Speicher des Browsers), die auf <strong>koraxx.fr</strong> und auf <strong>app.koraxx.fr</strong> verwendet werden, und warum.",
+      "s1Title": "1. Auf koraxx.fr (dieser Website)",
+      "s1Intro": "Diese Website verwendet keine Tracking-, Werbe- oder Analyse-Cookies. Sie speichert im lokalen Speicher Ihres Browsers lediglich drei Einstellungen:",
+      "s1List": "<li>das gewählte Design (hell oder dunkel);</li><li>die gewählte Sprache;</li><li>ob Sie diesen Hinweis akzeptiert oder abgelehnt haben, damit er Ihnen nicht bei jedem Besuch erneut angezeigt wird.</li>",
+      "s1Outro": "Diese Informationen verbleiben auf Ihrem Gerät: Sie werden niemals an unsere Server gesendet oder mit jemandem geteilt.",
+      "s2Title": "2. Auf app.koraxx.fr (der Anwendung)",
+      "s2Intro": "Nach der Anmeldung setzt die Anwendung zwei unbedingt erforderliche Cookies, ohne die Sie nicht angemeldet bleiben könnten:",
+      "s2List": "<li>ein <strong>Sitzungscookie</strong>, das Sie als angemeldeten Benutzer identifiziert;</li><li>ein <strong>Sicherheits-Cookie (CSRF)</strong>, das Ihre Aktionen vor Cross-Site-Request-Forgery schützt.</li>",
+      "s2Outro": "Da diese Cookies für den Betrieb des Dienstes unbedingt erforderlich sind, erfordern sie gemäß den geltenden Vorschriften keine Einwilligung Ihrerseits und werden bei der Abmeldung oder beim Ablauf Ihrer Sitzung gelöscht.",
+      "s3Title": "3. Cookies von Drittanbietern",
+      "s3Body": "Wenn Sie ein Abonnement abschließen oder verwalten, wird die Zahlung von <strong>Stripe</strong> auf einer von ihnen gehosteten Seite abgewickelt. Stripe kann dort eigene Cookies setzen, die deren eigener, von unserer unabhängiger Datenschutzrichtlinie unterliegen.",
+      "s4Title": "4. Verwaltung Ihrer Einstellungen",
+      "s4Body": "Sie können Ihre Meinung jederzeit auf dieser Website ändern, indem Sie die lokalen Speicherdaten Ihres Browsers für koraxx.fr löschen (in der Regel über die Datenschutzeinstellungen Ihres Browsers), wodurch Ihnen der Einwilligungshinweis bei Ihrem nächsten Besuch erneut angezeigt wird.",
+      "s5Title": "5. Kontakt",
+      "s5Body": "Bei Fragen zu dieser Richtlinie schreiben Sie uns an <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
     }
   },
   "ar": {
@@ -818,11 +1293,106 @@ window.KORAXX_I18N = {
       "decline": "رفض"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — الصفحة غير موجودة"
+      },
       "eyebrow": "خطأ 404",
       "title": "أخذت هذه الصفحة استراحة فنية.",
       "body": "الرابط الذي اتبعته لم يعد موجودًا. عد إلى الصفحة الرئيسية أو استكشف التطبيق.",
       "ctaHome": "العودة إلى الرئيسية",
       "ctaApp": "الانتقال إلى التطبيق"
+    },
+    "legalPage": {
+      "back": "العودة إلى الصفحة الرئيسية"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — سياسة الخصوصية",
+        "description": "كيف تجمع KORAXX بياناتك الشخصية وتستخدمها وتحميها."
+      },
+      "title": "سياسة الخصوصية",
+      "updated": "آخر تحديث: 15 سبتمبر 2026",
+      "intro": "توضح هذه السياسة البيانات التي تجمعها KORAXX عند استخدامك لموقعنا وتطبيقنا، وسبب جمعها، والحقوق التي تتمتع بها. تغطي هذه الوثيقة كلًا من <strong>koraxx.fr</strong> (هذا الموقع) و <strong>app.koraxx.fr</strong> (التطبيق).",
+      "s1Title": "1. من المسؤول عن بياناتك",
+      "s1Body": "<span class=\"legal-placeholder\">[اسم الكيان القانوني]</span>، <span class=\"legal-placeholder\">[الشكل القانوني، مثل SASU]</span>، المسجلة تحت الرقم <span class=\"legal-placeholder\">[SIRET / رقم التسجيل]</span>، ومقرها الرئيسي في <span class=\"legal-placeholder\">[العنوان المسجل]</span>، هي المسؤولة عن معالجة بياناتك بموجب اللائحة العامة لحماية البيانات (GDPR).",
+      "s2Title": "2. البيانات التي نجمعها",
+      "s2Intro": "عند إنشاء حساب واستخدام التطبيق، نقوم بجمع:",
+      "s2List": "<li><strong>معلومات الحساب</strong>: الاسم، عنوان البريد الإلكتروني، كلمة المرور (مخزّنة بشكل مشفّر)، صورة الملف الشخصي إن أضفتها.</li><li><strong>محتوى مساحة عملك</strong>: ملفات الفنانين، ملفات الصحافة الإلكترونية (EPK) ومحتواها (السير الذاتية، الموسيقى، الصور، الفيديوهات، المستندات)، جهات الاتصال التي تحفظها.</li><li><strong>معلومات الفريق</strong>: عناوين البريد الإلكتروني للأعضاء الذين تدعوهم ودورهم.</li><li><strong>معلومات الفوترة</strong>: خطة اشتراكك وحالتها. أرقام البطاقات المصرفية لا تمر أبدًا عبر خوادمنا — تتم معالجتها مباشرة من قِبل مزوّد الدفع، Stripe.</li>",
+      "s2Visitor": "عندما يزور شخص ما ملف EPK نشرته، نجمع أيضًا بيانات حول هذا الزائر لتزويدك بالإحصاءات: معرّف مجهول (مشفّر) للزائر، البلد ونوع الجهاز التقريبيان، الموقع المُحيل، بالإضافة إلى المشاهدات والتنزيلات. لا نخزّن عنوان IP الخام للزوار.",
+      "s3Title": "3. سبب استخدامنا لهذه البيانات",
+      "s3List": "<li>تقديم الخدمة وصيانتها وتأمينها (إنشاء حسابك، عرض ملفات EPK الخاصة بك، إدارة صلاحيات وصول فريقك).</li><li>معالجة المدفوعات وإدارة اشتراكك.</li><li>إرسال رسائل البريد الإلكتروني اللازمة لتشغيل الخدمة (تأكيد الحساب، إشعارات النشاط، معلومات الفوترة).</li><li>إعداد إحصاءات زيارة ملفات EPK الخاصة بك.</li><li>الرد على طلباتك عند التواصل معنا.</li>",
+      "s4Title": "4. مع من نشارك هذه البيانات",
+      "s4Intro": "نحن لا نبيع أي بيانات. نعتمد على عدد محدود من مقدمي الخدمات الفرعيين لتشغيل الخدمة:",
+      "s4List": "<li><strong>Stripe</strong>، لمعالجة المدفوعات والفوترة.</li><li><strong>مزوّد الاستضافة لدينا</strong>، لتخزين البيانات والملفات.</li>",
+      "s4Outro": "لا يملك هؤلاء المزوّدون إلا حق الوصول إلى البيانات الضرورية بشكل صارم لأداء مهامهم، وهم ملزمون بدورهم بالتزامات السرية.",
+      "s5Title": "5. ملفات تعريف الارتباط والتقنيات المشابهة",
+      "s5Body": "تفاصيل ملفات تعريف الارتباط وتقنيات التخزين المستخدمة من قِبل koraxx.fr والتطبيق موضحة في <a href=\"/cookies\">سياسة ملفات تعريف الارتباط</a> الخاصة بنا.",
+      "s6Title": "6. مدة الاحتفاظ بالبيانات",
+      "s6Body": "نحتفظ ببياناتك طالما أن حسابك نشط. إذا حذفت حسابك، تُحذف بياناتك الشخصية ومحتوى مساحة عملك خلال مدة معقولة، ما لم يفرض القانون مدة احتفاظ أطول (لا سيما بيانات الفوترة).",
+      "s7Title": "7. حقوقك",
+      "s7Body": "وفقًا للائحة العامة لحماية البيانات (GDPR)، يحق لك الوصول إلى بياناتك وتصحيحها ومحوها وتقييدها والاعتراض عليها ونقلها. يمكنك ممارسة هذه الحقوق مباشرة من إعدادات حسابك، أو بالتواصل معنا على العنوان أدناه. يمكنك أيضًا تقديم شكوى لدى CNIL (الهيئة الفرنسية لحماية البيانات).",
+      "s8Title": "8. الأمان",
+      "s8Body": "تُخزَّن كلمات المرور الخاصة بك بشكل مشفّر. الاتصالات بين متصفحك وخوادمنا مشفّرة (HTTPS). الوصول إلى بيانات الإنتاج مقتصر على الأشخاص الذين يحتاجونه لتشغيل الخدمة.",
+      "s9Title": "9. تعديلات هذه السياسة",
+      "s9Body": "قد نقوم بتحديث هذه السياسة من وقت لآخر. يظهر تاريخ آخر تحديث في أعلى هذه الصفحة. في حال حدوث تغيير جوهري، سنُعلمك عبر البريد الإلكتروني أو من خلال التطبيق.",
+      "s10Title": "10. تواصل معنا",
+      "s10Body": "لأي سؤال حول هذه السياسة أو لممارسة حقوقك، راسلنا على <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — شروط الاستخدام",
+        "description": "الشروط التي تحكم استخدامك لـ KORAXX."
+      },
+      "title": "شروط الاستخدام",
+      "updated": "آخر تحديث: 15 سبتمبر 2026",
+      "intro": "تحكم هذه الشروط استخدامك لـ KORAXX، المنصة المخصصة لإنشاء وتخصيص ومشاركة ملفات الصحافة الإلكترونية (EPK)، والمتاحة عبر <strong>koraxx.fr</strong> و <strong>app.koraxx.fr</strong>. بإنشائك حسابًا، فإنك توافق على هذه الشروط.",
+      "s1Title": "1. الخدمة",
+      "s1Body": "تتيح لك KORAXX إنشاء ملفات تعريف للفنانين، وبناء ملفات صحافة إلكترونية من أقسام قابلة للتخصيص (الموسيقى، الصور، الفيديوهات، الصحافة، الاعتمادات)، ونشرها علنًا أو مشاركتها عبر روابط خاصة محمية بكلمة مرور، ومتابعة إحصاءات زيارتها.",
+      "s2Title": "2. حسابك",
+      "s2Body": "يجب عليك تقديم معلومات دقيقة عند إنشاء حسابك، وأنت مسؤول عن سرية كلمة مرورك. أنت مسؤول عن أي نشاط يتم من حسابك. يجب أن يكون عمرك 18 عامًا على الأقل، أو أن تحصل على إذن من ولي أمر قانوني، لإنشاء حساب.",
+      "s3Title": "3. الاشتراكات والفوترة",
+      "s3Body": "تستفيد كل مساحة عمل جديدة من فترة تجريبية مجانية مدتها 14 يومًا. بعد ذلك، يعتمد الوصول إلى الميزات على الخطة المشترَك بها (Starter أو Pro أو Business)، والتي تُفوتر شهريًا أو سنويًا عبر Stripe. يمكنك إلغاء اشتراكك في أي وقت من إعدادات الفوترة؛ ويصبح الإلغاء ساري المفعول في نهاية الفترة المدفوعة بالفعل. باستثناء الأخطاء من جانبنا، فإن المبالغ المدفوعة سلفًا غير قابلة للاسترداد.",
+      "s4Title": "4. الاستخدام المقبول",
+      "s4Intro": "تلتزم بعدم استخدام KORAXX من أجل:",
+      "s4List": "<li>نشر محتوى غير قانوني أو تشهيري أو ينتهك حقوق طرف ثالث، لا سيما حقوق النشر المتعلقة بأعمال موسيقية لا تملكها أو غير مصرّح لك بتوزيعها.</li><li>محاولة تجاوز إجراءات الأمان الخاصة بالخدمة أو الوصول إلى بيانات لا تخصك.</li><li>إرسال روابط خاصة أو دعوات بغرض التحرش أو الرسائل غير المرغوب فيها.</li>",
+      "s4Outro": "نحتفظ بالحق في تعليق أي حساب يخالف هذه القواعد.",
+      "s5Title": "5. محتواك",
+      "s5Body": "تحتفظ بكامل الحقوق على المحتوى الذي ترفعه (السير الذاتية، الموسيقى، الصور، الفيديوهات، المستندات). عند نشره على KORAXX، فإنك تمنحنا فقط الحق التقني اللازم لاستضافته وعرضه ضمن إطار الخدمة التي قمت بإعدادها (صفحة عامة، رابط خاص، نطاق مخصص). تبقى KORAXX وشعارها وواجهتها ملكًا لنا.",
+      "s6Title": "6. توافر الخدمة",
+      "s6Body": "نبذل جهودًا معقولة للحفاظ على توفر الخدمة، دون ضمان توفرها دون انقطاع. قد تحدث انقطاعات لأغراض الصيانة أو لأسباب خارجة عن إرادتنا.",
+      "s7Title": "7. الإنهاء",
+      "s7Body": "يمكنك حذف حسابك في أي وقت من الإعدادات. يجوز لنا تعليق أو إنهاء حساب في حال مخالفة هذه الشروط، أو التأخر المطوّل في السداد، بعد إشعارك متى كان ذلك ممكنًا بشكل معقول.",
+      "s8Title": "8. تحديد المسؤولية",
+      "s8Body": "تُقدَّم الخدمة \"كما هي\". وفي الحدود التي يسمح بها القانون، لا يمكن تحميل KORAXX مسؤولية الأضرار غير المباشرة الناتجة عن استخدام الخدمة، بما في ذلك فقدان البيانات أو الإيرادات.",
+      "s9Title": "9. التعديلات",
+      "s9Body": "يجوز لنا تعديل هذه الشروط. في حال حدوث تغيير جوهري، سنُعلمك عبر البريد الإلكتروني أو من خلال التطبيق قبل دخوله حيّز التنفيذ.",
+      "s10Title": "10. القانون المعمول به",
+      "s10Body": "تخضع هذه الشروط لـ <span class=\"legal-placeholder\">[القانون الفرنسي]</span>. تختص محاكم <span class=\"legal-placeholder\">[المدينة / الجهة القضائية المختصة]</span> بالنظر في أي نزاع، مع مراعاة الأحكام الإلزامية المطبّقة على المستهلكين.",
+      "s11Title": "11. تواصل معنا",
+      "s11Body": "لأي سؤال حول هذه الشروط، راسلنا على <span class=\"legal-placeholder\">[legal@koraxx.fr]</span>."
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — سياسة ملفات تعريف الارتباط",
+        "description": "ملفات تعريف الارتباط وتقنيات التخزين التي تستخدمها KORAXX، وسبب ذلك."
+      },
+      "title": "سياسة ملفات تعريف الارتباط",
+      "updated": "آخر تحديث: 15 سبتمبر 2026",
+      "intro": "توضح هذه الصفحة ملفات تعريف الارتباط والتقنيات المشابهة للتخزين (مثل التخزين المحلي للمتصفح) المستخدمة على <strong>koraxx.fr</strong> وعلى <strong>app.koraxx.fr</strong>، وسبب استخدامها.",
+      "s1Title": "1. على koraxx.fr (هذا الموقع)",
+      "s1Intro": "لا يستخدم هذا الموقع أي ملفات تعريف ارتباط للتتبع أو الإعلانات أو التحليلات. يقوم فقط بتخزين ثلاثة تفضيلات في التخزين المحلي لمتصفحك:",
+      "s1List": "<li>المظهر المختار (فاتح أو داكن)؛</li><li>اللغة المختارة؛</li><li>ما إذا كنت قد قبلت أو رفضت هذا الإشعار، حتى لا نعرضه لك في كل زيارة.</li>",
+      "s1Outro": "تبقى هذه المعلومات على جهازك: لا تُرسَل أبدًا إلى خوادمنا ولا تُشارَك مع أي جهة.",
+      "s2Title": "2. على app.koraxx.fr (التطبيق)",
+      "s2Intro": "بعد تسجيل الدخول، يقوم التطبيق بوضع ملفَي تعريف ارتباط ضروريَين بشكل صارم لعمله، ولا يمكنك بدونهما البقاء متصلًا:",
+      "s2List": "<li>ملف تعريف ارتباط للجلسة، يحدد هويتك كمستخدم مسجَّل الدخول؛</li><li>ملف تعريف ارتباط أمني (CSRF)، يحمي إجراءاتك من تزوير الطلبات عبر المواقع.</li>",
+      "s2Outro": "نظرًا لكون هذه الملفات ضرورية بشكل صارم لتشغيل الخدمة، فهي لا تتطلب موافقتك بموجب اللوائح المعمول بها، وتُحذف عند تسجيل الخروج أو انتهاء صلاحية جلستك.",
+      "s3Title": "3. ملفات تعريف الارتباط الخاصة بأطراف ثالثة",
+      "s3Body": "عند اشتراكك أو إدارتك لاشتراك، تتم معالجة الدفع من قِبل <strong>Stripe</strong> على صفحة تستضيفها هي. قد تضع Stripe ملفات تعريف الارتباط الخاصة بها هناك، والتي تخضع لسياسة الخصوصية الخاصة بها، المستقلة عن سياستنا.",
+      "s4Title": "4. إدارة تفضيلاتك",
+      "s4Body": "يمكنك تغيير رأيك في أي وقت على هذا الموقع من خلال مسح بيانات التخزين المحلي لمتصفحك الخاصة بـ koraxx.fr (عادةً عبر إعدادات الخصوصية في متصفحك)، مما سيؤدي إلى ظهور شريط الموافقة مجددًا في زيارتك القادمة.",
+      "s5Title": "5. تواصل معنا",
+      "s5Body": "لأي سؤال حول هذه السياسة، راسلنا على <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span>."
     }
   },
   "zh": {
@@ -955,11 +1525,106 @@ window.KORAXX_I18N = {
       "decline": "拒绝"
     },
     "notfound": {
+      "meta": {
+        "title": "KORAXX — 页面未找到"
+      },
       "eyebrow": "404 错误",
       "title": "此页面进行了一次艺术性的暂停。",
       "body": "您访问的链接已不存在。返回首页或探索应用。",
       "ctaHome": "返回首页",
       "ctaApp": "前往应用"
+    },
+    "legalPage": {
+      "back": "返回首页"
+    },
+    "privacyPage": {
+      "meta": {
+        "title": "KORAXX — 隐私政策",
+        "description": "KORAXX 如何收集、使用和保护您的个人数据。"
+      },
+      "title": "隐私政策",
+      "updated": "最后更新时间：2026年9月15日",
+      "intro": "本政策说明了 KORAXX 在您使用我们的网站和应用程序时收集哪些数据、收集原因以及您所拥有的权利。本文件同时适用于 <strong>koraxx.fr</strong>（本网站）和 <strong>app.koraxx.fr</strong>（应用程序）。",
+      "s1Title": "1. 谁对您的数据负责",
+      "s1Body": "<span class=\"legal-placeholder\">[法律实体名称]</span>，<span class=\"legal-placeholder\">[法律形式，例如 SASU]</span>，注册号为 <span class=\"legal-placeholder\">[SIRET / 注册号]</span>，注册地址位于 <span class=\"legal-placeholder\">[注册地址]</span>，根据《通用数据保护条例》（GDPR）负责处理您的数据。",
+      "s2Title": "2. 我们收集的数据",
+      "s2Intro": "当您创建账户并使用应用程序时，我们会收集：",
+      "s2List": "<li><strong>账户信息</strong>：姓名、电子邮箱地址、密码（以加密形式存储）、如添加的头像照片。</li><li><strong>您工作区的内容</strong>：艺人档案、电子新闻资料袋（EPK）及其内容（简介、音乐、照片、视频、文档）、您保存的联系人。</li><li><strong>团队信息</strong>：您邀请的成员的电子邮箱地址及其角色。</li><li><strong>账单信息</strong>：您的订阅计划及其状态。银行卡号从不经过我们的服务器——它们由我们的支付服务商 Stripe 直接处理。</li>",
+      "s2Visitor": "当有人查看您发布的 EPK 时，我们还会收集该访客的数据，以便为您提供统计信息：匿名化（哈希处理）的访客标识符、大致的国家和设备类型、来源网站，以及浏览量和下载量。我们不存储访客的原始 IP 地址。",
+      "s3Title": "3. 我们使用这些数据的原因",
+      "s3List": "<li>提供、维护和保障服务安全（创建您的账户、展示您的 EPK、管理团队的访问权限）。</li><li>处理付款并管理您的订阅。</li><li>向您发送服务运行所必需的电子邮件（账户确认、活动通知、账单信息）。</li><li>生成您 EPK 的查看统计数据。</li><li>在您联系我们时回复您的请求。</li>",
+      "s4Title": "4. 我们与谁共享这些数据",
+      "s4Intro": "我们不出售任何数据。我们仅使用少数几个次级处理方来运营服务：",
+      "s4List": "<li><strong>Stripe</strong>，用于处理付款和账单。</li><li><strong>我们的托管服务商</strong>，用于存储数据和文件。</li>",
+      "s4Outro": "这些服务商仅能访问其履行职责所严格必需的数据，并且自身也受保密义务约束。",
+      "s5Title": "5. Cookie 及类似技术",
+      "s5Body": "koraxx.fr 及应用程序所使用的 Cookie 和存储技术的详细信息，请参阅我们的 <a href=\"/cookies\">Cookie 政策</a>。",
+      "s6Title": "6. 数据保留期限",
+      "s6Body": "只要您的账户处于活跃状态，我们就会保留您的数据。如果您删除账户，您的个人数据和工作区内容将在合理期限内删除，除非法律要求更长的保留期限（尤其是账单数据）。",
+      "s7Title": "7. 您的权利",
+      "s7Body": "根据 GDPR，您有权访问、更正、删除、限制处理、反对处理以及转移您的数据。您可以直接通过账户设置行使这些权利，或通过下方地址与我们联系。您也可以向 CNIL（法国数据保护主管机构）投诉。",
+      "s8Title": "8. 安全",
+      "s8Body": "您的密码以加密形式存储。您的浏览器与我们服务器之间的通信均经过加密（HTTPS）。生产数据的访问权限仅限于运营服务所必需的人员。",
+      "s9Title": "9. 本政策的变更",
+      "s9Body": "我们可能会不时更新本政策。最后更新日期显示在本页顶部。如发生重大变更，我们将通过电子邮件或应用程序通知您。",
+      "s10Title": "10. 联系我们",
+      "s10Body": "如对本政策有任何疑问，或希望行使您的权利，请通过 <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span> 与我们联系。"
+    },
+    "termsPage": {
+      "meta": {
+        "title": "KORAXX — 使用条款",
+        "description": "约束您使用 KORAXX 的条款。"
+      },
+      "title": "使用条款",
+      "updated": "最后更新时间：2026年9月15日",
+      "intro": "本条款约束您对 KORAXX 的使用，KORAXX 是用于创建、自定义和分享电子新闻资料袋（EPK）的平台，可通过 <strong>koraxx.fr</strong> 和 <strong>app.koraxx.fr</strong> 访问。创建账户即表示您同意本条款。",
+      "s1Title": "1. 服务内容",
+      "s1Body": "KORAXX 允许您创建艺人档案，通过可自定义的板块（音乐、照片、视频、新闻报道、制作人员名单）构建电子新闻资料袋，公开发布或通过受密码保护的私密链接分享，并追踪其查看统计数据。",
+      "s2Title": "2. 您的账户",
+      "s2Body": "创建账户时您必须提供真实准确的信息，并对您密码的保密性负责。您对通过您账户进行的所有活动负责。创建账户须年满 18 周岁，或获得法定监护人的授权。",
+      "s3Title": "3. 订阅与账单",
+      "s3Body": "每个新工作区可享受 14 天免费试用。试用期结束后，功能的使用权限取决于您订阅的计划（Starter、Pro 或 Business），并通过 Stripe 按月或按年计费。您可以随时在账单设置中取消订阅；取消将在已付费周期结束后生效。除非因我方过错，否则已支付的款项不予退还。",
+      "s4Title": "4. 可接受的使用方式",
+      "s4Intro": "您承诺不将 KORAXX 用于：",
+      "s4List": "<li>发布非法、诽谤性内容，或侵犯第三方权利的内容，尤其是您不拥有或无权发布的音乐作品的版权内容。</li><li>试图规避本服务的安全措施，或访问不属于您的数据。</li><li>出于骚扰或垃圾信息目的发送私密链接或邀请。</li>",
+      "s4Outro": "我们保留暂停违反上述规则账户的权利。",
+      "s5Title": "5. 您的内容",
+      "s5Body": "您对上传的内容（简介、音乐、照片、视频、文档）保留全部权利。将内容发布在 KORAXX 上时，您仅授予我们在您所配置的服务范围内（公开页面、私密链接、自定义域名）托管和展示该内容所必需的技术权利。KORAXX 及其标志、界面仍归我们所有。",
+      "s6Title": "6. 服务可用性",
+      "s6Body": "我们会采取合理措施保持服务可用，但不保证服务不间断可用。可能因维护或超出我们控制范围的原因而发生中断。",
+      "s7Title": "7. 终止",
+      "s7Body": "您可以随时在设置中删除您的账户。如您违反本条款，或长期未付款，我们可在合理可能的情况下发出通知后暂停或终止您的账户。",
+      "s8Title": "8. 责任限制",
+      "s8Body": "本服务按\"现状\"提供。在法律允许的范围内，KORAXX 不对因使用本服务而产生的间接损害承担责任，包括数据或收入的损失。",
+      "s9Title": "9. 条款变更",
+      "s9Body": "我们可能会修改本条款。如发生重大变更，我们将在其生效前通过电子邮件或应用程序通知您。",
+      "s10Title": "10. 适用法律",
+      "s10Body": "本条款受<span class=\"legal-placeholder\">[法国]</span>法律管辖。任何争议均由<span class=\"legal-placeholder\">[城市 / 有管辖权的司法机构]</span>的法院管辖，但适用于消费者的强制性规定除外。",
+      "s11Title": "11. 联系我们",
+      "s11Body": "如对本条款有任何疑问，请通过 <span class=\"legal-placeholder\">[legal@koraxx.fr]</span> 与我们联系。"
+    },
+    "cookiesPage": {
+      "meta": {
+        "title": "KORAXX — Cookie 政策",
+        "description": "KORAXX 使用哪些 Cookie 和存储技术，以及原因。"
+      },
+      "title": "Cookie 政策",
+      "updated": "最后更新时间：2026年9月15日",
+      "intro": "本页面说明了 <strong>koraxx.fr</strong> 和 <strong>app.koraxx.fr</strong> 所使用的 Cookie 及类似存储技术（如浏览器本地存储），以及使用原因。",
+      "s1Title": "1. 关于 koraxx.fr（本网站）",
+      "s1Intro": "本网站不使用任何跟踪、广告或分析类 Cookie。它仅在您浏览器的本地存储中保存三项偏好设置：",
+      "s1List": "<li>您选择的主题（浅色或深色）；</li><li>您选择的语言；</li><li>您是否已接受或拒绝本提示条，以便不在每次访问时都向您展示。</li>",
+      "s1Outro": "这些信息仅保存在您的设备上：绝不会发送到我们的服务器，也不会与任何人共享。",
+      "s2Title": "2. 关于 app.koraxx.fr（应用程序）",
+      "s2Intro": "登录后，应用程序会设置两个严格必需的 Cookie，没有它们您将无法保持登录状态：",
+      "s2List": "<li>会话 Cookie，用于识别您为已登录用户；</li><li>安全（CSRF）Cookie，用于保护您的操作免受跨站请求伪造攻击。</li>",
+      "s2Outro": "由于这些 Cookie 是服务运行所严格必需的，根据适用法规，它们不需要您的同意，并会在您注销或会话过期时被删除。",
+      "s3Title": "3. 第三方 Cookie",
+      "s3Body": "当您订阅或管理订阅时，付款将由 <strong>Stripe</strong> 在其托管的页面上处理。Stripe 可能会在该页面上设置其自有的 Cookie，受其自身隐私政策管辖，与我们的政策相互独立。",
+      "s4Title": "4. 管理您的偏好设置",
+      "s4Body": "您可以随时通过清除浏览器中针对 koraxx.fr 的本地存储数据（通常可通过浏览器的隐私设置进行）来改变您的选择，这样在您下次访问时将重新显示同意提示条。",
+      "s5Title": "5. 联系我们",
+      "s5Body": "如对本政策有任何疑问，请通过 <span class=\"legal-placeholder\">[privacy@koraxx.fr]</span> 与我们联系。"
     }
   }
 };

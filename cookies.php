@@ -21,7 +21,7 @@
     })();
   </script>
 </head>
-<body>
+<body data-i18n-page="cookiesPage">
   <header class="site-header" data-site-header>
     <div class="container">
       <a href="/" class="brand" aria-label="KORAXX">
@@ -47,40 +47,40 @@
       <div class="container">
         <a href="/" class="legal-back">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
-          Retour à l'accueil
+          <span data-i18n="legalPage.back">Retour à l'accueil</span>
         </a>
 
-        <h1>Politique relative aux cookies</h1>
-        <p class="legal-updated">Dernière mise à jour : 15 septembre 2026</p>
+        <h1 data-i18n="cookiesPage.title">Politique relative aux cookies</h1>
+        <p class="legal-updated" data-i18n="cookiesPage.updated">Dernière mise à jour : 15 septembre 2026</p>
 
         <div class="legal-content">
-          <p>Cette page explique les cookies et technologies de stockage similaires (comme le <em>local storage</em> du navigateur) utilisés sur <strong>koraxx.fr</strong> et sur <strong>app.koraxx.fr</strong>, et pourquoi.</p>
+          <p data-i18n-html="cookiesPage.intro">Cette page explique les cookies et technologies de stockage similaires (comme le <em>local storage</em> du navigateur) utilisés sur <strong>koraxx.fr</strong> et sur <strong>app.koraxx.fr</strong>, et pourquoi.</p>
 
-          <h2>1. Sur koraxx.fr (ce site)</h2>
-          <p>Ce site n'utilise aucun cookie de suivi, publicitaire ou analytique. Il enregistre uniquement, dans le stockage local de votre navigateur, trois préférences :</p>
-          <ul>
+          <h2 data-i18n="cookiesPage.s1Title">1. Sur koraxx.fr (ce site)</h2>
+          <p data-i18n="cookiesPage.s1Intro">Ce site n'utilise aucun cookie de suivi, publicitaire ou analytique. Il enregistre uniquement, dans le stockage local de votre navigateur, trois préférences :</p>
+          <ul data-i18n-html="cookiesPage.s1List">
             <li>le thème choisi (clair ou sombre) ;</li>
             <li>la langue choisie ;</li>
             <li>le fait que vous ayez accepté ou refusé ce bandeau, pour ne pas vous le montrer à chaque visite.</li>
           </ul>
-          <p>Ces informations restent sur votre appareil : elles ne sont jamais envoyées à nos serveurs ni partagées avec qui que ce soit.</p>
+          <p data-i18n="cookiesPage.s1Outro">Ces informations restent sur votre appareil : elles ne sont jamais envoyées à nos serveurs ni partagées avec qui que ce soit.</p>
 
-          <h2>2. Sur app.koraxx.fr (l'application)</h2>
-          <p>Une fois connecté, l'application dépose deux cookies strictement nécessaires à son fonctionnement, sans lesquels vous ne pourriez pas rester connecté :</p>
-          <ul>
+          <h2 data-i18n="cookiesPage.s2Title">2. Sur app.koraxx.fr (l'application)</h2>
+          <p data-i18n="cookiesPage.s2Intro">Une fois connecté, l'application dépose deux cookies strictement nécessaires à son fonctionnement, sans lesquels vous ne pourriez pas rester connecté :</p>
+          <ul data-i18n-html="cookiesPage.s2List">
             <li>un <strong>cookie de session</strong>, qui vous identifie en tant qu'utilisateur connecté ;</li>
             <li>un <strong>cookie de sécurité (CSRF)</strong>, qui protège vos actions contre les falsifications de requêtes intersites.</li>
           </ul>
-          <p>Ces cookies étant strictement nécessaires au fonctionnement du service, ils ne requièrent pas votre consentement au sens de la réglementation applicable, et sont supprimés à la déconnexion ou à l'expiration de votre session.</p>
+          <p data-i18n="cookiesPage.s2Outro">Ces cookies étant strictement nécessaires au fonctionnement du service, ils ne requièrent pas votre consentement au sens de la réglementation applicable, et sont supprimés à la déconnexion ou à l'expiration de votre session.</p>
 
-          <h2>3. Cookies tiers</h2>
-          <p>Lorsque vous souscrivez ou gérez un abonnement, le paiement est traité par <strong>Stripe</strong> sur une page qu'ils hébergent. Stripe peut y déposer ses propres cookies, régis par leur propre politique de confidentialité, indépendante de la nôtre.</p>
+          <h2 data-i18n="cookiesPage.s3Title">3. Cookies tiers</h2>
+          <p data-i18n-html="cookiesPage.s3Body">Lorsque vous souscrivez ou gérez un abonnement, le paiement est traité par <strong>Stripe</strong> sur une page qu'ils hébergent. Stripe peut y déposer ses propres cookies, régis par leur propre politique de confidentialité, indépendante de la nôtre.</p>
 
-          <h2>4. Gérer vos préférences</h2>
-          <p>Vous pouvez à tout moment changer d'avis sur ce site en effaçant les données de stockage local de votre navigateur pour koraxx.fr (généralement via les réglages de confidentialité de votre navigateur), ce qui réaffichera le bandeau de consentement à votre prochaine visite.</p>
+          <h2 data-i18n="cookiesPage.s4Title">4. Gérer vos préférences</h2>
+          <p data-i18n="cookiesPage.s4Body">Vous pouvez à tout moment changer d'avis sur ce site en effaçant les données de stockage local de votre navigateur pour koraxx.fr (généralement via les réglages de confidentialité de votre navigateur), ce qui réaffichera le bandeau de consentement à votre prochaine visite.</p>
 
-          <h2>5. Nous contacter</h2>
-          <p>Pour toute question sur cette politique, écrivez-nous à <span class="legal-placeholder">[privacy@koraxx.fr]</span>.</p>
+          <h2 data-i18n="cookiesPage.s5Title">5. Nous contacter</h2>
+          <p data-i18n-html="cookiesPage.s5Body">Pour toute question sur cette politique, écrivez-nous à <span class="legal-placeholder">[privacy@koraxx.fr]</span>.</p>
         </div>
       </div>
     </section>

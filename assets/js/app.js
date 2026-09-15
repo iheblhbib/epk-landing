@@ -87,10 +87,12 @@
           if (typeof value === 'string') el.setAttribute(attr, value);
         });
     });
-    if (dict.meta) {
-      if (dict.meta.title) document.title = dict.meta.title;
+    const pageKey = document.body.getAttribute('data-i18n-page');
+    const meta = (pageKey && dict[pageKey] && dict[pageKey].meta) || dict.meta;
+    if (meta) {
+      if (meta.title) document.title = meta.title;
       const desc = document.querySelector('meta[name="description"]');
-      if (desc && dict.meta.description) desc.setAttribute('content', dict.meta.description);
+      if (desc && meta.description) desc.setAttribute('content', meta.description);
     }
   }
 
