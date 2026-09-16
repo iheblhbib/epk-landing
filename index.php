@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KORAXX — Créez et partagez l'EPK de votre artiste</title>
-  <meta name="description" content="KORAXX est la plateforme pour créer, personnaliser et partager le dossier de presse électronique (EPK) de votre artiste. Essai gratuit de 14 jours." />
+  <meta name="description" content="KORAXX est la plateforme pour créer, personnaliser et partager le dossier de press électronique (EPK) de votre artiste. Essai gratuit de 14 jours." />
   <link rel="icon" href="assets/brand/mark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,7 +93,7 @@
         <div class="hero-copy">
           <span class="hero-badge" data-i18n="hero.badge">Nouveau · Créez votre EPK en quelques minutes</span>
           <h1>
-            <span data-i18n="hero.titleStart">Votre dossier de presse,</span>
+            <span data-i18n="hero.titleStart">Votre dossier de press,</span>
             <span class="accent" data-i18n="hero.titleAccent">prêt à être vu.</span>
           </h1>
           <p class="lead" data-i18n="hero.lead">Créez, personnalisez et partagez l'EPK de votre groupe en quelques minutes.</p>
@@ -147,7 +147,7 @@
           <div class="step-card glass">
             <span class="step-number">2</span>
             <h3 data-i18n="steps.step2Title">Construisez votre EPK</h3>
-            <p data-i18n="steps.step2Body">Ajoutez des sections par glisser-déposer : musique, photos, presse, crédits.</p>
+            <p data-i18n="steps.step2Body">Ajoutez des sections par glisser-déposer : musique, photos, press, crédits.</p>
           </div>
           <div class="step-card glass">
             <span class="step-number">3</span>
@@ -169,7 +169,7 @@
           <div class="track-row">
             <span class="track-number">01</span>
             <h3 class="track-title" data-i18n="features.f1Title">Éditeur de sections</h3>
-            <p class="track-body" data-i18n="features.f1Body">Glissez-déposez des sections (musique, photos, vidéos, presse) et personnalisez le thème.</p>
+            <p class="track-body" data-i18n="features.f1Body">Glissez-déposez des sections (musique, photos, vidéos, press) et personnalisez le thème.</p>
           </div>
           <div class="track-row">
             <span class="track-number">02</span>
@@ -309,7 +309,7 @@
             <img class="lockup-light" src="assets/brand/lockup-light.png" alt="KORAXX" />
             <img class="lockup-dark" src="assets/brand/lockup-dark.png" alt="KORAXX" />
           </a>
-          <p data-i18n="footer.tagline">La plateforme de promotion musicale pour créer, personnaliser et partager votre dossier de presse électronique.</p>
+          <p data-i18n="footer.tagline">La plateforme de promotion musicale pour créer, personnaliser et partager votre dossier de press électronique.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
