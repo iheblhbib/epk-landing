@@ -96,7 +96,7 @@
             <span data-i18n="hero.titleStart">Votre dossier de presse,</span>
             <span class="accent" data-i18n="hero.titleAccent">prêt à être vu.</span>
           </h1>
-          <p class="lead" data-i18n="hero.lead">Créez, personnalisez et partagez l'EPK de votre artiste en quelques minutes — sans designer, sans code.</p>
+          <p class="lead" data-i18n="hero.lead">Créez, personnalisez et partagez l'EPK de votre groupe en quelques minutes.</p>
           <div class="hero-ctas">
             <a href="https://app.koraxx.fr/register" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">Créer mon compte</a>
             <a href="https://app.koraxx.fr/login" class="btn btn-ghost btn-lg" data-i18n="hero.ctaSecondary">Se connecter</a>
@@ -141,7 +141,7 @@
         <div class="steps">
           <div class="step-card glass">
             <span class="step-number">1</span>
-            <h3 data-i18n="steps.step1Title">Créez votre artiste</h3>
+            <h3 data-i18n="steps.step1Title">Créez votre fiche</h3>
             <p data-i18n="steps.step1Body">Renseignez le profil de l'artiste : bio, genre, liens, contacts.</p>
           </div>
           <div class="step-card glass">
@@ -174,7 +174,7 @@
           <div class="track-row">
             <span class="track-number">02</span>
             <h3 class="track-title" data-i18n="features.f2Title">Bibliothèque média</h3>
-            <p class="track-body" data-i18n="features.f2Body">Centralisez photos, visuels et documents pour tous vos EPK.</p>
+            <p class="track-body" data-i18n="features.f2Body">Centralisez photos, visuels et documents pour tous vos EPKs.</p>
           </div>
           <div class="track-row">
             <span class="track-number">03</span>
@@ -281,7 +281,7 @@
             <a href="https://app.koraxx.fr/register" class="btn btn-ghost" data-i18n="pricing.ctaBusiness">Nous contacter</a>
           </div>
         </div>
-        <p class="pricing-note" data-i18n="pricing.note">Facturation annuelle disponible avec une remise. Les prix sont en euros, hors taxes.</p>
+        <p class="pricing-note" data-i18n="pricing.note">Facturation annuelle disponible avec une remise. Les prix sont en euros, TTC.</p>
       </div>
     </section>
 

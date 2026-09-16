@@ -335,7 +335,7 @@ window.KORAXX_I18N = {
       "ctaStarter": "Commencer",
       "ctaPro": "Commencer",
       "ctaBusiness": "Nous contacter",
-      "note": "Facturation annuelle disponible avec une remise. Les prix sont en euros, hors taxes."
+      "note": "Facturation annuelle disponible avec une remise. Les prix sont en euros, TTC."
     },
     "cta": {
       "title": "Prêt à créer votre premier EPK ?",
